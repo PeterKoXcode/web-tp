@@ -1,0 +1,50 @@
+[
+    {
+        "date":"05.10.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description": [
+            "Zoznámenie sa p. vedúcej projektu s členmi tímu, krátke predstavenie sa",
+            "Úvod do predmetu, objasnenie, že výstupom predmetu bude práca podobná bakalárskej práci, pričom rozsah sa rozdelí medzi členov tímu (cca 7-8 strán na člena). Počas TP1 bude cieľom zamerať sa na teoretickú časť práce.",
+            "Teoretický úvod do problematiky OCT",
+            "Vysvetlenie zadania projektu - cieľom je segmentovať jednotlivé vrstvy retiny z obrazov, ktoré sú výstupom OCT vyšetrenia.",
+            "Rozdelenie úloh do ďalšieho stretnutia (12. 10. o 13:00):",
+            "3 členovia si viac naštudujú, ako možno získať relevantné obrazy na analýzy (datasety, …). (Gálik, Jenčík, Kopecký)",
+            "2 členovia zistia viac o známych postupoch segmentácie informácii z obrazov, či už v oblasti blízkej projektu alebo inej. (Galčíková, Malíšek)",
+            "Založenie komunikačného kanálu na platforme FB Messenger. (Galčíková)",
+            "Založenie skupiny na platforme Trello pre efektívny manažment a sledovanie progresu práce. (Gálik)",
+            "Určenie lídra (vedúceho) spomedzi členov tímu.",
+            "Spísanie zápisnice z prvého stretnutia. (Malíšek)"
+        ]
+    },
+    {
+        "date":"12.10.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Odprezentovanie výsledkov z úloh zadaných na predošlom stretnutí",
+            "Lídrom tímu je Miroslav Malíšek.",
+            "Komunikačný kanál na platforme FB Messenger a skupina na platforme Trello boli úspešne vytvorené.",
+            "Prezentácia dostupných databáz OCT snímkov sietnice. (Gálik, Jenčík, Kopecký)",
+            "Prezentácia známych postupov segmentácie vrstiev sietnice z OCT snímkov. (Galčíková, Malíšek)",
+            "Rozdelenie úloh do ďalšieho stretnutia:",
+            "Spracovanie informácií o preskúmaných dostupných databázach OCT snímkov do tabuľky. (Gálik)",
+            "Prieskum a otestovanie možností preprocessingu obrázkov sietnice. (Jenčík, Malíšek)",
+            "Prieskum možností vyrezávania častí obrázkov s očným nervom. (Galčíková, Gálik, Kopecký)",
+            "Spísanie zápisnice z druhého stretnutia. (Galčíková)"
+        ]
+    },
+    {
+        "date":"19.10.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":""
+    },
+    {
+        "date":"26.10.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":""
+    },
+    {
+        "date":"02.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":""
+    }
+]

@@ -23,7 +23,7 @@ export function About() {
           naštudovaných riešení implementujte vybrané riešenie segmentácie,
           prípadne navrhnite vlastné. 5. Otestujte vytvorené riešenie.
         </p>
-        <img src="./public/layers.png" alt="OCT layers" />
+        <img src="./web-tp/images/layers.png" alt="OCT layers" />
       </Container>
     </>
   );

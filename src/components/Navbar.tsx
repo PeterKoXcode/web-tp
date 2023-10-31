@@ -20,7 +20,7 @@ export function Navbar() {
           <NavbarBs.Brand href="#">
             <img
               alt=""
-              src="./public/tp-icon.png"
+              src="./web-tp/images/tp-icon.png"
               width="30"
               height="30"
               className="d-inline-block align-top"

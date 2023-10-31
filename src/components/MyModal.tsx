@@ -3,21 +3,30 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-export function MyModal(props: any) {
+type Props = {
+  date: string,
+  participation: string[],
+  desc: string[]
+}
+
+export function MyModal({date, participation, desc}: Props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  /*
   var desc_place = '';
   for(var i = 0; i < props.desc.length; i++){
     desc_place += '' + props.desc[i] + '. ';
   }
+  */
+  
   
 
   return (
     <>
       <Button variant="dark" onClick={handleShow} className="my-2">
-        {props.date}
+        { date }
       </Button>
 
       <Modal
@@ -29,7 +38,7 @@ export function MyModal(props: any) {
         scrollable
       >
         <Modal.Header closeButton>
-          <Modal.Title>Zápisnica zo dňa {props.date}</Modal.Title>
+          <Modal.Title>Zápisnica zo dňa { date }</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <hgroup>
@@ -37,12 +46,12 @@ export function MyModal(props: any) {
           </hgroup>
           <div className="entry-content">
             <ul>
-                <li>MUDr. Veronika Kurilová, PhD., - {props.participation[0]}</li>
-                <li>Bc. Veronika Galčíková - {props.participation[1]}</li>
-                <li>Bc. Marek Gálik - {props.participation[2]}</li>
-                <li>Bc. Tomáš Jenčík - {props.participation[3]}</li>
-                <li>Bc. Peter Kopecký - {props.participation[4]}</li>
-                <li>Bc. Miroslav Malíšek - {props.participation[5]}</li>
+                <li>MUDr. Veronika Kurilová, PhD., - { participation[0] }</li>
+                <li>Bc. Veronika Galčíková - { participation[1] }</li>
+                <li>Bc. Marek Gálik - { participation[2] }</li>
+                <li>Bc. Tomáš Jenčík - { participation[3] }</li>
+                <li>Bc. Peter Kopecký - { participation[4] }</li>
+                <li>Bc. Miroslav Malíšek - { participation[5] }</li>
             </ul>
           </div>
           <br />
@@ -50,8 +59,10 @@ export function MyModal(props: any) {
             <h3>Obsah stretnutia:</h3>
           </hgroup>
           <div className="entry-content">
-            <ul>
-              {desc_place}
+            <ul id="descList">
+              {desc.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
         </Modal.Body>

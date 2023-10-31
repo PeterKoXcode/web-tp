@@ -56,10 +56,10 @@ export function MinuteBook() {
         <h1>Zápisnica</h1>
         <br />
         <Row>
-          {Records.map((record) => {
+          {Records.map((record, index) => {
             return (
               <>
-                <Col>
+                <Col key={index}>
                   <MyModal
                     date={record.date}
                     participation={record.participation}

@@ -13,9 +13,9 @@ export function App({}: Props) {
     <Navbar />
     <Container>
       <Routes>
-        <Route path="/web-tp/" element={<Home />} />
-        <Route path="/web-tp/about" element={<About />} />
-        <Route path="/web-tp/minute-book" element={<MinuteBook />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/minute-book" element={<MinuteBook />} />
       </Routes>
     </Container>
     </>

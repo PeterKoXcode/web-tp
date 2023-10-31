@@ -35,16 +35,57 @@
     {
         "date":"19.10.2023", 
         "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
-        "description":""
+        "description":[
+            "V rámci tohto stretnutia Marek Gálik písomne informoval cez skupinu na FB Messenger p. vedúcu projektu a zvyšok tímu o tom, ako spracoval získané databázy OCT snímkov.",
+            "Samotné datasety uložil na Google disk, ktorý je poskytnutý na univerzitnú licenciu STU.",
+            "Štruktútu disku, datasetov a informácii o nich prehľadne zobrazil do tabuľky v exceli.",
+            "Okrem toho Marek Gálik a Tomáš Jenčík informovali, že sa v datasete Waterloo pokúsili spárovať obrazy OCT so segmentovanými maskami, avšak presnosť sa ukázala ako veľmi nízka a masky na obrazy nesedeli.",
+            "Ostatní členovia tímu počas tohto týždňa pracovali na splnení úloh, ktoré im boli zadané na 2. stretnutí."
+        ]
     },
     {
         "date":"26.10.2023", 
         "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
-        "description":""
+        "description":[
+            "Odprezentovanie výsledkov z úloh zadaných na 2. stretnutí",
+            "Prezentácia možných postupov číslicového spracovania OCT obrazov sietnice a tiež použitie jednoduchých algoritmov strojového učenia na segmentáciu vrstiev sietnice z obrazov (Malíšek).",
+            "Prezentácia o možnom postupe predspracovania OCT obrazov sietnice, v ktorých sa nachádza očný nerv (Galčíková).",
+            "Rozdelenie úloh do ďalšieho týždňa (deadline 1.11. 2022 o 20:00)",
+            "Teória k hlbokým neurónovým sieťam, ktoré sa používajú na segmentáciu obrazov (Galčíková).",
+            "Teória a rozbor konkrétnych neurónových sietí, ktoré sa už použili pri segmentácii OCT obrazov sietnice oka v iných publikáciách (Gálik)",
+            "Popis OCT prístroja a jeho výstupov. Teoretický úvod do problému segmentácie (Jenčík).",
+            "Sietnica oka. Makula. Popis OCT obrazu makuly. Ochorenia, ktoré sa diagnostikujú pomocou OCT makuly (Kopecký).",
+            "Teória k číslicovým spracovaniam obrazov. Popis základných algoritmov strojového učenia, ktoré sa používajú na segmentáciu obrazov (Malíšek)",
+            "Dohodnutie ďalšieho stretnutia na 3.11. 2023 o 10:00.",
+            "Spísanie zápisnice zo 4. stretnutia (Malíšek)."
+        ]
     },
     {
-        "date":"02.11.2023", 
+        "date":"03.11.2023", 
         "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
-        "description":""
+        "description":[
+            "Vytvorený web projektu cez GitHub pages (Kopecký)"
+        ]
+    },
+    {
+        "date":"09.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
+    },
+    {
+        "date":"16.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
+    },
+    {
+        "date":"23.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
     }
 ]

@@ -7,20 +7,20 @@ export function Navbar() {
       <NavbarBs className="bg-white shadow-sm mb-3">
         <Container>
           <Nav className="me-auto">
-            <Nav.Link to="/" as={NavLink}>
+            <Nav.Link to="/web-tp/" as={NavLink}>
               Home
             </Nav.Link>
-            <Nav.Link to="/about" as={NavLink}>
+            <Nav.Link to="/web-tp/about" as={NavLink}>
               About
             </Nav.Link>
-            <Nav.Link to="/minute-book" as={NavLink}>
+            <Nav.Link to="/web-tp/minute-book" as={NavLink}>
               Minute Book
             </Nav.Link>
           </Nav>
           <NavbarBs.Brand href="#">
             <img
               alt=""
-              src="./web-tp/images/tp-icon.png"
+              src="./images/tp-icon.png"
               width="30"
               height="30"
               className="d-inline-block align-top"

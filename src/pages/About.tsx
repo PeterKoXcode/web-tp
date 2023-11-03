@@ -23,7 +23,11 @@ export function About() {
           naštudovaných riešení implementujte vybrané riešenie segmentácie,
           prípadne navrhnite vlastné. 5. Otestujte vytvorené riešenie.
         </p>
-        <img className="img-fluid" src="./images/layers.png" alt="OCT layers" />
+        <img
+          className="img-fluid"
+          src="./images/layers_sk.png"
+          alt="OCT layers"
+        />
       </Container>
     </>
   );

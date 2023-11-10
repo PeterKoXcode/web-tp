@@ -72,5 +72,28 @@
             "Naplánovanie ďalšieho stretnutia na piatok 10.11. o 10:00.",
             "Spísanie zápisnice z 5. stretnutia. (Kopecký)"
         ]
+    },
+    {
+        "date":"10.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Kontrola spojeného dokumentu písaného v LaTeXe, preorganizovanie poradia obsahu:",
+            "1. Sietnica oka a makula",
+            "2. OCT prístroj",
+            "3. Čo je to segmentácia",
+            "4. Segmentácia obrazov pomocou hlbokých sietí",
+            "5. Metriky používané pri segmentácií obrazov",
+            "6. Ďalšie prístupy segmentácie obrazov",
+            "7. Segmentácia pomocou číslicového spracovania obrazov",
+            "Popísať metódy segmentácie obrazových dát.",
+            "Pridať základný úvod o sieťach.",
+            "Vytvoriť samostatnú kapitolu pre existujúcich projektoch v praxi - týkajúc sa segmentácie a jej výsledkov.",
+            "MGU-Net model a Pokročilé U-Net modely premenovať tak ako to správne nazývajú v článkoch, z ktorých sme čerpali.",
+            "Spomenuté časti zaobaliť a označiť ako analytickú časť práce.",
+            "Úloha je naplánovať si zasadnutie skupiny, na ktorom dohodneme metódu a dataset, ktorý použijeme na praktickej časti práce.",
+            "Úlohy do budúceho týždňa:",
+            "a) Upratať databázu a dohodnúť sa čo použijeme, pokúsiť sa vyriešiť problém s maskami.",
+            "b) Prerobiť štruktúru dokumentu podľa dohodnutých podmienok."
+        ]
     }
 ]

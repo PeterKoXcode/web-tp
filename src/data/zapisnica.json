@@ -95,5 +95,39 @@
             "a) Upratať databázu a dohodnúť sa čo použijeme, pokúsiť sa vyriešiť problém s maskami.",
             "b) Prerobiť štruktúru dokumentu podľa dohodnutých podmienok."
         ]
+    },
+    {
+        "date":"17.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Odprezentovanie upraveného dokumentu pre teoretickú časť a popis datasetov.",
+            "Prezentácia spojenej teórie v jednom celku. (Jenčík)",
+            "Prezentácia výsledkov pre hľadanie nových datasetov a získaných informácií k už získaným datasetom. (Gálik, Galčíková, Kopecký)",
+            "Rozdelenie úloh do ďalšieho týždňa (deadline 23.11. 2023).",
+            "Úpravy teoretickej časti. (Jenčík)",
+            "Pokračovanie v hľadaní nových datasetov pre segmentované obrázky sietnice oka. (Galčíková, Gálik, Kopecký)",
+            "Pokračovanie v hľadaní iných spôsobov pre spracovanie obrazu sietnice oka. (Malíšek)",
+            "Spísanie zápisnice zo 7. stretnutia. (Jenčík)"
+        ]
+    },
+    {
+        "date":"23.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Riešenie problémov s konkrétnymi datasetmi a hľadanie riešení.",
+            "Popis nájdených problémov.",
+            "Opis datasetu Waterloo.",
+            "Opis datasetu Sanghai.",
+            "Popis riešenia vyrezania fovey.",
+            "Hľadanie možností pre natrénovanie siete.",
+            "Naplánovanie ďalšieho stretnutia na 30.11.2023.",
+            "Rozdelenie úloh do ďalšieho týždňa (deadline 30.11. 2023):",
+            "1. Odstránenie terčov a príprava databázy",
+            "2. Príprava a natrénovanie siete",
+            "3. Príprava MGU netu",
+            "4. Príprava programu",
+            "5. Komunikácia s vlastníkmi datasetu Waterloo",
+            "Rozdelenie foveoly na 2 polovice pre testovaciu databázu (úloha do budúcna)."
+        ]
     }
 ]

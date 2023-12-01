@@ -55,7 +55,7 @@ export function MinuteBook() {
       <Container className="text-center">
         <h1>Zápisnica</h1>
         <br />
-        <Row>
+        <Row xs={2} md={2} lg={3} className="g-3 mx-3">
           {Records.map((record, index) => {
             return (
               <>

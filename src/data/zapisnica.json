@@ -129,5 +129,20 @@
             "5. Komunikácia s vlastníkmi datasetu Waterloo",
             "Rozdelenie foveoly na 2 polovice pre testovaciu databázu (úloha do budúcna)."
         ]
+    },
+    {
+        "date":"30.11.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Prezentácia programu, ukážka obrázkov bez terčov a diagnostika nájdených problémov.",
+            "Konzultovanie spôsobu, akým by sme mohli vyriešiť odstránenie čiernej plochy z obrázkov tak, aby pri vyhodnocovaní nepridávalo úspešnosť predpovede do tejto plochy.",
+            "Rozdelenie úloh jednotlivcom tímu:",
+            "1. Na stránku napísať o databázacha čo s nimi robíme (čo sa v kóde robilo s obrázkami), pridať sekciu na stránku o riešiteľoch, popísať OCT na základe už spísanej teórie v dokumentácií. (Kopecký)",
+            "2. Vrstvová úspešnosť - vyriešiť problém s čiernymi oblasťami a predpovedaním sa do tejto oblasti. (Malíšek)",
+            "3. Implementovať augmentáciu + tuning trénovania. (Galčíková)",
+            "4. Preložiť semi-transparentné masky cez pôvodné obrázky pre lepšie pochopenie výsledkov počas testovania - budeme môcť kontrolovať ako veľmi sme sa trafili pri rozdelení jednotlivých vrstiev. (Gálik)",
+            "5. Úprava dokumentácie (popísať čo sme robili v kóde a aký je výsledok). (Jenčík)",
+            "Naplánovanie budúceho meetingu na 07.12.2023 vo štvrtok prezenčne."
+        ]
     }
 ]

@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+//import { Container } from "react-bootstrap";
 import { Navbar } from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
@@ -12,14 +12,12 @@ export function App({}: Props) {
   return (
     <>
       <Navbar />
-      <Container>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/minute-book" element={<MinuteBook />} />
-        </Routes>
-      </Container>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/minute-book" element={<MinuteBook />} />
+      </Routes>
     </>
   );
 }

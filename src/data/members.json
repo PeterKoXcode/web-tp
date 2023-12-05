@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Bc. Marek Gálik",
+      "bio": "Ukončil som bakalárske štúdium na STU FEI API (2020/2021-2022/2023). Od začiatku roku 2022 do ukončenia bakalárskeho štúdia som bol súčasťou telemedicínskeho projektu TeleCovid (projektové stredisko FEI STU). V rámci projektu som vykonával merania s vyvíjaným zariadením (pulzoxymeter) a následne analyzoval namerané PPG dáta. Neskôr som na projekte vyvíjal systém pre efektívne analyzovanie, zobrazovanie a označovanie dát z ktorého bola aj vypracovaná bakalárska práca na tému Návrh webovej aplikácie pre databázu moderného pulzoxymetra (Python - Django). Mám preto blízko k telemedicíne a aj keď mám s danou témou minimálne skúsenosti, verím, že inžinierske predmety Strojové učenie a neurónové siete a Biometria mi poskytnú kvalitný základ pre vypracovanie témy."
+    },
+    {
+      "id": 2,
+      "name": "Bc. Veronika Galčíková",
+      "bio": "Som absolventkou bakalárskeho štúdia na STU FEI v odbore Aplikovaná informatika, zameranie modelovanie a simulácia udalostných systémov. Počas bakalárskeho štúdia som absolvovala predmet Umelá inteligencia a v rámci prvého ročníka inžinierskeho štúdia na STU FEI mám zapísané predmety: Strojové učenie a neurónové siete, Biometria. Tieto predmety by mohli pomôcť pri vypracovávaní tímového projektu s touto témou. Od začiatku roku 2022 do polovice roku 2023 som pracovala na telemedicínskom projekte na STU FEI. Projekt sa venoval vývoju telemedicínskeho zariadenia (pulzoxymetru) na monitorovanie okysličenia krvi a srdcového pulzu pacienta. V rámci projektu som sa podieľala na meraniach s vyvíjaným pulzoxymetrom, spracovaní nameraných dát a ich zobrazovaní. Aj moja bakalárska práca sa venovala vytvoreniu webovej aplikácie na online vizualizáciu signálu z pulzoxymetra a označovanie nameraných dát pre potreby projektu. Webová aplikácia bola implementovaná v programovacom jazyku Python, konkrétne vo frameworku Flask."
+    },
+    {
+      "id": 3,
+      "name": "Bc. Miroslav Malíšek",
+      "bio": "Som absolvent bakalárskeho štúdia medzi rokmi 2021 - 2023 na FEI STU v odbore Aplikovaná informatika. Momentálne pokračujem na rovnakej škole a v rovnakom odbore na inžinierskom štúdiu. Okrem toho som strávil jeden rok v Španielsku v rámci programu Erasmus, kde som študoval na univerzite Universidad Politécnica de Madrid na fakulte informatiky. Tam som sa zoznámil so základmi strojového učenia, či už na predmete Pattern Recognition, kde som v jazyku python implementoval niekoľko základných algoritmov strojového učenia, alebo Robotics and Computer Perception v ktorom sa strojové učenie používalo pri rozpoznávaní objektov v obraze s následným ovládaním robotického vozidla, či Data Analytics, na ktorom som pracoval s reálnymi dátami z kolonoskopických vyšetrení a kde cieľom bolo prejsť celým procesom dátovej analýzy od čistenia dát, cez vytvorenie rozhodovacieho modelu až po spísa technického reportu. Okrem toho som počas bakalárskeho štúdia absolvoval predmet Umelá inteligencia. Aktuálne mám na inžinierskom stupni zapísané Strojové učenie a neurónové siete, pričom verím, že poznatky z tohto predmetu využijem počas práce na tímovom projekte."
+    },
+    {
+      "id": 4,
+      "name": "Bc. Peter Kopecký",
+      "bio": "Úspešne som absolvoval bakalárske štúdium na Slovenskej technickej univerzite, na Fakulte elektrotechniky a informatiky, odbor Aplikovaná informatika so zameraním na modelovanie a simuláciu udalostných systémov. V súčasnosti študujem v prvom ročníku inžinierskeho štúdia a mám zapísané predmety ako Strojové učenie a neurónové siete, čo považujem za výhodu v súvislosti s danou témou. Počas predmetu Umelá inteligencia som získal znalosti v oblasti umelých neurónových sietí, evolučných algoritmov a iných. Okrem toho sa venujem developmentu a konzultáciám v rámci ServiceNow, kde prechádzam celým procesom tvorby produktov pre klientov. Tiež mám skúsenosti s analýzou dát, ktoré som nadobudol pri vypracovaní bakalárskej práce na tému 'Knižnica na import jazyka Petriflow v jazyku Python'. Medzi rokmi 2022-23 som sa podieľal na vývoji webovej aplikácie, ktorá umožňovala náhodnú generáciu matematických príkladov pre registrovaných študentov a po kontrole registrovaným profesorom aj kontrolu výsledkov. Druhá webová aplikácia slúžila ako automaticky aktualizovaná nástenka zvolených dát zozbieraných na internete."
+    },
+    {
+      "id": 5,
+      "name": "Bc. Tomáš Jenčík",
+      "bio": "Úspešne som ukončil štúdium bakalárskeho ročníka v roku 2023 (začiatok štúdia v roku 2020) na FEI STU v odbore Aplikovaná informatika so zameraním modelovanie a simulácia udalostných systémov. Bakalársku prácu som napísal na tému Systém na spracovanie HTML/XHTML súborov, v ktorej som sa bližšie venoval princípom strojového učenia, umelej inteligencie a ich využitie pri získavaní dát, pričom práca bola vytvorená v jazyku Python. V 2. ročníku bakalárskeho štúdia som ukončil predmet Umelá inteligencia, v ktorom sme sa bližšie venovali téme, ktorá súvisí s touto prácou. Taktiež mám v tomto ročníku zapísané predmety ako Strojové učenie a neurónové siete a Biometria, ktoré mi pomôžu lepšie pochopiť túto tematiku a vypracovať prácu. Pevne verím, že dané znalosti mi pomôžu pri podieľaní sa na tvorbe tejto práci."
+    }
+  ]

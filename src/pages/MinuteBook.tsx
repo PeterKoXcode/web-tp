@@ -52,7 +52,7 @@ export function MinuteBook() {
   */
   return (
     <>
-      <Container className="text-center">
+      <Container className="text-center pt-3">
         <h1>Zápisnica</h1>
         <br />
         <Row xs={2} md={2} lg={3} className="g-3 mx-3">

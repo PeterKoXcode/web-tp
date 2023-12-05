@@ -1,4 +1,4 @@
-import { Container, Image, Nav, Navbar as NavbarAbout } from "react-bootstrap";
+import { Container, Nav, Navbar as NavbarAbout } from "react-bootstrap";
 
 export function About() {
   const scrollToSection = (sectionId: string) => {

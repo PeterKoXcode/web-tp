@@ -144,5 +144,27 @@
             "5. Úprava dokumentácie (popísať čo sme robili v kóde a aký je výsledok). (Jenčík)",
             "Naplánovanie budúceho meetingu na 07.12.2023 vo štvrtok prezenčne."
         ]
+    },
+    {
+        "date":"07.12.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Prezentovanie vrstvovej úspešnosti - úloha dotrénovať a otestovať výsledky na základe predikovaných masiek.",
+            "Prezentovanie výsledok preložených semi-transparentných masiek",
+            "Konzultovanie ohľadom dokumentácie pokroku pri trénovaní",
+            "Prezentácia webstránky - úloha doplniť opis trénovania a implementovaného kódu + pridať reprezentatívne obrázky výsledkov",
+            "Naplánovanie budúceho stretnutia online vo štvrtok 14.12.2023"
+        ]
+    },
+    {
+        "date":"14.12.2023", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Prezentácia úspešnosti náhodných trénovaní.",
+            "Na základe slabej predikcie poslednej vrstvy zdola oproti pravdivej maske porozmýšlať nad metódou predspracovania pre túto vrstvu - môže nám to veľmi zlepšiť úspešnosť, pretože je to najväčšia vrstva.",
+            "Prezentovanie augmentácie + zapojiť do budúcna augmentáciu pri trénovaní a porovnať výsledky.",
+            "Diskusia - zistenie chyby na maskách niekoľkých obrázkov : rozhodnúť sa ako ďalej s týmito obrázkami pracovať, pravdepodobne odstránime/odrežeme na obrázku aj maske rovnakú oblasť, v ktorej sa nachádza zakryvená vrstva, pretože na pravdivej maske ju vôbec nevidno a následne tieto orezané obrázky znova natrénovať.",
+            "Komunikovanie ohľadom odovzdávania práce a obsahu, ktorý má dokumentácia obsahovať - do 14.01.2023 poslať MUDr. Kurilovej prácu na kontrolu vo formáte docx."
+        ]
     }
 ]

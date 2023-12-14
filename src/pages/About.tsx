@@ -294,29 +294,39 @@ export function About() {
             /*padding: "0 150px 0 150px",*/
             width: "60%",
             color: "#fff",
+            display: "flex",
           }}
         >
-          <h2
-            style={{
-              fontSize: "43px",
-            }}
-          >
-            Implementácia do kódu
-          </h2>
-          <p
-            style={{
-              fontSize: "15px",
-              /*margin: "30px 0 30px 40px",*/
-              lineHeight: "25px",
-              color: "#919191",
-            }}
-          >
-            Načítajú sa obrázky. Z masky, ktorá obsahuje RGB hodnoty farieb
-            spravíme masku, ktorá obsahuje čísla tried jednotlivých vrstiev
-            (hodnoty od 0 po 9). Všetky obrázky sú resize-nuté na jednu veľkosť
-            a je z nich vytvorená trénovacia, validačná a testovacia množina, s
-            ktorými sa potom trénujeme sieť alebo vykonávame predikcie.
-          </p>
+          <div>
+            <h2
+              style={{
+                fontSize: "43px",
+              }}
+            >
+              Implementácia do kódu
+            </h2>
+            <p
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Načítajú sa obrázky. Z masky, ktorá obsahuje RGB hodnoty farieb
+              spravíme masku, ktorá obsahuje čísla tried jednotlivých vrstiev
+              (hodnoty od 0 po 9). Všetky obrázky sú resize-nuté na jednu
+              veľkosť a je z nich vytvorená trénovacia, validačná a testovacia
+              množina, s ktorými sa potom trénujeme sieť alebo vykonávame
+              predikcie.
+            </p>
+            <p></p>
+          </div>
+          <img
+            className="img-fluid"
+            src="./images/img_with_mask_trans_inv.png"
+            alt="OCT layers"
+          />
         </section>
       </div>
     </>

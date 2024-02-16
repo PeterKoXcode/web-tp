@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { MyModal } from "../components/MyModal";
 import Records from "../data/zapisnica.json";
+import Records2 from "../data/zapisnica2.json";
 
 export function MinuteBook() {
   /*
@@ -55,8 +56,46 @@ export function MinuteBook() {
       <Container className="text-center pt-3">
         <h1>Zápisnica</h1>
         <br />
+        <Row className="my-3 mx-auto justify-content-center align-items-center">
+          <Col xs={3}>
+            <hr />
+          </Col>
+          <Col xs={2} className="text-center">
+            <span className="content">Zimný semester</span>
+          </Col>
+          <Col xs={3}>
+            <hr />
+          </Col>
+        </Row>
         <Row xs={2} md={2} lg={3} className="g-3 mx-3">
           {Records.map((record, index) => {
+            return (
+              <>
+                <Col key={index}>
+                  <MyModal
+                    date={record.date}
+                    participation={record.participation}
+                    desc={record.description}
+                  />
+                </Col>
+                <br />
+              </>
+            );
+          })}
+        </Row>
+        <Row className="my-3 mx-auto justify-content-center align-items-center">
+          <Col xs={3}>
+            <hr />
+          </Col>
+          <Col xs={2} className="text-center">
+            <span className="content">Letný semester</span>
+          </Col>
+          <Col xs={3}>
+            <hr />
+          </Col>
+        </Row>
+        <Row xs={2} md={2} lg={3} className="g-3 mx-3">
+          {Records2.map((record, index) => {
             return (
               <>
                 <Col key={index}>

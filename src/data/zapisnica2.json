@@ -1,0 +1,45 @@
+[
+    {
+        "date":"16.02.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Vyhodnotenie aktuálneho stavu projektu a plánovanie práce na letný semester",
+            "Dokumentácia : prehodnotiť obsah a zhrnúť ho do kľúčovejších bodov, kontrola poradia kontentu tak, aby všetko na seba nadväzovalo chronologicky, pri každom testovaní zaznamenávať výsledky úspešnosti (buď separátne alebo ako tabuľku zhrnutia všetkých výsledkov)",
+            "Do budúceho stretnutia naštudovať dostupné metriky zaoberajúce sa viac triednou segmentáciou (kľudne aj iných problémov ako očnej sietnice) - Dice, Average Recall, ...",
+            "Rozdelenie praktickej časti na 3 experimenty :",
+            "1. Všetky pixely (bez augmentácie) - spozorovali sme problém s maskami, konkrétne so zahnutou časťou vrstiev, tu vykonáme experiment s pôvodnou veľkosťou, ktorá zahŕňa danú časť a aj experiment, pri ktorom orežeme obrázky tak, aby sa zahnutá časť na nich nenachádzala.",
+            "2. Po vrstvách - tu už pracujeme s orezanými obrázkami (bez zakryvenej časti), vykonáme experiment s augmentáciou a bez augmentácie a posúdime, ktorý je lepší. Následne môžeme experimentovať s augmentáciou aj na inej sieti.",
+            "3. Náhodná celá makula - pokúsime sa nájsť normálnu makulu ideálne aj s maskou a otestovať na nej náš program."
+        ]
+    },{
+        "date":"23.02.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
+    },{
+        "date":"01.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
+    },{
+        "date":"08.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
+    },{
+        "date":"15.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
+    },{
+        "date":"22.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            ""
+        ]
+    }
+]

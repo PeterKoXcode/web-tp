@@ -3,8 +3,8 @@
         "date":"16.02.2024", 
         "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
         "description":[
-            "Vyhodnotenie aktuálneho stavu projektu a plánovanie práce na letný semester",
-            "Dokumentácia : prehodnotiť obsah a zhrnúť ho do kľúčovejších bodov, kontrola poradia kontentu tak, aby všetko na seba nadväzovalo chronologicky, pri každom testovaní zaznamenávať výsledky úspešnosti (buď separátne alebo ako tabuľku zhrnutia všetkých výsledkov)",
+            "Vyhodnotenie aktuálneho stavu projektu a plánovanie práce na letný semester.",
+            "Dokumentácia : prehodnotiť obsah a zhrnúť ho do kľúčovejších bodov, kontrola poradia kontentu tak, aby všetko na seba nadväzovalo chronologicky, pri každom testovaní zaznamenávať výsledky úspešnosti (buď separátne alebo ako tabuľku zhrnutia všetkých výsledkov).",
             "Do budúceho stretnutia naštudovať dostupné metriky zaoberajúce sa viac triednou segmentáciou (kľudne aj iných problémov ako očnej sietnice) - Dice, Average Recall, ...",
             "Rozdelenie praktickej časti na 3 experimenty :",
             "1. Všetky pixely (bez augmentácie) - spozorovali sme problém s maskami, konkrétne so zahnutou časťou vrstiev, tu vykonáme experiment s pôvodnou veľkosťou, ktorá zahŕňa danú časť a aj experiment, pri ktorom orežeme obrázky tak, aby sa zahnutá časť na nich nenachádzala.",
@@ -15,31 +15,10 @@
         "date":"23.02.2024", 
         "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
         "description":[
-            ""
-        ]
-    },{
-        "date":"01.03.2024", 
-        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
-        "description":[
-            ""
-        ]
-    },{
-        "date":"08.03.2024", 
-        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
-        "description":[
-            ""
-        ]
-    },{
-        "date":"15.03.2024", 
-        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
-        "description":[
-            ""
-        ]
-    },{
-        "date":"22.03.2024", 
-        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
-        "description":[
-            ""
+            "Prezentácia nájdených metrík -> zvolili sme si metriku Dice score.",
+            "Naplánovanie budúceho stretnutia na 01.03.2024 o 11:45.",
+            "Do budúcna natrénovať orezanú sieť bez zahnutej časti.",
+            "Použiť augmentáciu a porovnať výsledky s predošlými testovaniami (doterajšia najlepšia úspešnosť 79% na neorezanom)."
         ]
     }
 ]

@@ -20,5 +20,15 @@
             "Do budúcna natrénovať orezanú sieť bez zahnutej časti.",
             "Použiť augmentáciu a porovnať výsledky s predošlými testovaniami (doterajšia najlepšia úspešnosť 79% na neorezanom)."
         ]
+    },{
+        "date":"01.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Odprezentovanie implementácie Dice score a ukážka jeho výpočtu.",
+            "Vyhodnotenie jednej netrénovanej siete pomocou Dice score a zdieľanie našich výsledkov.",
+            "Diskusia o úspešnosti trénovania, porovnanie úspešnosti s prácami iných ľudí.",
+            "Do najbližšieho stretnutia naplánovať rozdelenie trénovania rôznych sietí, na ktorých bude už aplikovaná augmentácia a natrénovať ich.",
+            "Diskusia o vlastnom riešení / implementácie siete namiesto použitia existujúcej."
+        ]
     }
 ]

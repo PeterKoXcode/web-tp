@@ -28,7 +28,8 @@
             "Vyhodnotenie jednej netrénovanej siete pomocou Dice score a zdieľanie našich výsledkov.",
             "Diskusia o úspešnosti trénovania, porovnanie úspešnosti s prácami iných ľudí.",
             "Do najbližšieho stretnutia naplánovať rozdelenie trénovania rôznych sietí, na ktorých bude už aplikovaná augmentácia a natrénovať ich.",
-            "Diskusia o vlastnom riešení / implementácie siete namiesto použitia existujúcej."
+            "Diskusia o vlastnom riešení / implementácie siete namiesto použitia existujúcej.",
+            "Reminder - výsledky úspešnosti nášho trénovania a úspešnosti konkurentých projektov spísať do jednej tabuľky pre lepšiu porovnateľnosť výsledkov a tabuľku zahrnúť do dokumentácie."
         ]
     }
 ]

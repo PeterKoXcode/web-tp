@@ -31,5 +31,17 @@
             "Diskusia o vlastnom riešení / implementácie siete namiesto použitia existujúcej.",
             "Reminder - výsledky úspešnosti nášho trénovania a úspešnosti konkurentých projektov spísať do jednej tabuľky pre lepšiu porovnateľnosť výsledkov a tabuľku zahrnúť do dokumentácie."
         ]
+    },{
+        "date":"15.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Diskudia o pokroku v trénovaní - výskyt problémov pri augmentácii : množina problémov sa týkala priamo funkcionality, ktorá nebola navrhnutá pre nami vybraný dataset. Tieto problémy sa týkali kontrastu a jasnosti a vyriešil ich pôvodný tvorca daného súboru Marek Gálik. Druhá chyba sa týkala ukladania obrázkov cez numpy array, ktorá zachovávala takmer pôvodné farby obrázkov (normalizovali sa). Riešením načítania v správnom formáte sme vyriešili za pomoci knižnice pillow.",
+            "Výsledok od posledného stretnutia je teda funkčná augmentácia s dostupným augmentovaným datasetom. Okrem iného sme výsledky úspešnosti porovnali s konkurenciou a výsledok je pri najlepšom približne 84% čo je takmer rovnaká úspešnosť na ako najlepšia dosiahnutá spomedzi príslušných projektov (pomocou Unet).",
+            "Do najbližšieho stretnutia sa máme rozhodnúť akým smerom by sme chceli ešte pokračovať, potenciálne nápady:",
+            "a) vytvoriť odlišnú štruktúru pomocou ResNet modelu",
+            "b) jednoducho modifikovať štruktúru aktuálneho Unet modelu a porovnať výsledky s dosavadnými",
+            "c) prejsť na trénovanie samotnej makuly",
+            "Na záver priblžný plán do konca semestra - po hore uvedenej časti nám už zostane priestor čisto na dorobenie a finalizovanie dokumentácie a paralelne s tým vytvorenie výstižného a podstatného opisu projektu a všetko s ním spojeného an našu webovú stránku."
+        ]
     }
 ]

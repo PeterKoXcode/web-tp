@@ -1,4 +1,7 @@
 import { Container, Nav, Navbar as NavbarAbout } from "react-bootstrap";
+import MyTable from "../components/MyTable";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export function About() {
   const scrollToSection = (sectionId: string) => {
@@ -63,10 +66,10 @@ export function About() {
         </h1>
         <section
           id="projectAssignment"
-          className="pt-5 mx-auto"
+          className="pt-5 mx-auto col-sm-12 col-md-8 px-2"
           style={{
             /*padding: "0 150px 0 150px",*/
-            width: "60%",
+            /*width: "60%",*/
             color: "#fff",
           }}
         >
@@ -107,10 +110,10 @@ export function About() {
 
         <section
           id="octTheory"
-          className="pt-5 mx-auto"
+          className="pt-5 mx-auto col-sm-12 col-md-8 px-2"
           style={{
             /*padding: "0 150px 0 150px",*/
-            width: "60%",
+            /*width: "60%",*/
             color: "#fff",
           }}
         >
@@ -245,10 +248,10 @@ export function About() {
 
         <section
           id="databases"
-          className="pt-5 mx-auto"
+          className="pt-5 mx-auto col-sm-12 col-md-8 px-2"
           style={{
             /*padding: "0 150px 0 150px",*/
-            width: "60%",
+            /*width: "60%",*/
             color: "#fff",
           }}
         >
@@ -289,44 +292,58 @@ export function About() {
         </section>
         <section
           id="codeImplementation"
-          className="pt-5 mx-auto"
+          className="pt-5 mx-auto col-sm-12 col-md-8 px-2"
           style={{
             /*padding: "0 150px 0 150px",*/
-            width: "60%",
-            color: "#fff",
-            display: "flex",
+            /*width: "60%",*/
+            color: "#fff"
           }}
         >
-          <div>
-            <h2
-              style={{
-                fontSize: "43px",
-              }}
-            >
-              Implementácia do kódu
-            </h2>
-            <p
-              style={{
-                fontSize: "15px",
-                /*margin: "30px 0 30px 40px",*/
-                lineHeight: "25px",
-                color: "#919191",
-              }}
-            >
-              Načítajú sa obrázky. Z masky, ktorá obsahuje RGB hodnoty farieb
-              spravíme masku, ktorá obsahuje čísla tried jednotlivých vrstiev
-              (hodnoty od 0 po 9). Všetky obrázky sú resize-nuté na jednu
-              veľkosť a je z nich vytvorená trénovacia, validačná a testovacia
-              množina, s ktorými sa potom trénujeme sieť alebo vykonávame
-              predikcie.
-            </p>
-            <p></p>
-          </div>
-          <img
-            className="img-fluid"
-            src="./images/img_with_mask_trans_inv.png"
-            alt="OCT layers"
-          />
+          <Container>
+                <h2
+                  style={{
+                    fontSize: "43px",
+                  }}
+                >
+                  Implementácia do kódu
+                </h2>
+                <Row>
+                  <Col sm={8}>
+                    <p
+                      style={{
+                        fontSize: "15px",
+                        /*margin: "30px 0 30px 40px",*/
+                        lineHeight: "25px",
+                        color: "#919191",
+                      }}
+                    >
+                      Načítajú sa obrázky. Z masky, ktorá obsahuje RGB hodnoty farieb
+                      spravíme masku, ktorá obsahuje čísla tried jednotlivých vrstiev
+                      (hodnoty od 0 po 9). Všetky obrázky sú resize-nuté na jednu
+                      veľkosť a je z nich vytvorená trénovacia, validačná a testovacia
+                      množina, s ktorými sa potom trénujeme sieť alebo vykonávame
+                      predikcie.
+                    </p>
+                    <p></p>
+                  </Col>
+                  <Col sm={4}>
+                    <img
+                      className="img-fluid"
+                      src="./images/img_with_mask_trans_inv.png"
+                      alt="OCT layers"
+                    />
+                  </Col>
+                </Row>
+                <h2
+                  style={{
+                    fontSize: "33px"
+                  }} 
+                  className='mb-4'
+                >
+                  Porovnanie úspešnosti modelov
+                </h2>
+                <MyTable />
+              </Container>
         </section>
       </div>
     </>

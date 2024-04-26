@@ -43,5 +43,43 @@
             "c) prejsť na trénovanie samotnej makuly",
             "Na záver priblžný plán do konca semestra - po hore uvedenej časti nám už zostane priestor čisto na dorobenie a finalizovanie dokumentácie a paralelne s tým vytvorenie výstižného a podstatného opisu projektu a všetko s ním spojeného an našu webovú stránku."
         ]
+    },{
+        "date":"22.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Vyhodnotenie modelu celej makule a diskusia nad výsledkami. Dokopy sme vyhodnocovali úspešnosť šiestich modelov na piatich obrázkoch makúl. Najlepší model, trénovaný na neaugmentovanom testovacom datasete dosiahol dice skóre 0.82 a ten istý model dosiahol na makuliach dice skóre 0.747. Model trénovaný na augmentovanom testovacom datasete (celkovo najlepší) dosiahol dice skóre 0.845 a na makuliach dosiahol dice skóre 0.849.",
+            "Naštudovanie a výber nových architektúr sietí, ktoré by sme navyše trénovali a vyhodnotili z dôvodu toho, aby sme mali viacero rôznych výsledkov priamo od nás na porovnanie (nerátame výsledky konkurentných projektov).",
+            "Náš dosavadný postup a nové znalosti zdokumentovať do dokumentácie."
+        ]
+    },{
+        "date":"29.03.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Natrénovanie a vyhodnotenie modelu na neupravených originálnych snímkach (s časťami nervu a aj s bočnými časťami). Toto trénovanie dosiahlo na testovacom datasete dice skóre 0.598 a to vrátane vrstvy s nervom. Bez nervovej vrstvy dosiahol dice skóre 0.581. Na makuliach model dosiahol dice skóre 0.548 čo je značne horšie ako náš upravený augmentovaný dataset.",
+            "Naštudovanie architektúry siete 'DeepLab V3+', ktorý je postavený aj na 'ResNet 50'. Snaha o implementáciu tejto architektúry pre náš problém. Implementácia sa nepodarila pre problém v danej sieti.",
+            "Zhrnutie celkových výsledkov porovnaní našich úspešností, ale aj úspešností konkurentných projektov do jednej tabuľky, ktorá je zverejnená na web stránke projektu."
+        ]
+    },{
+        "date":"05.04.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Dopísanie dokumentácie projektu a posunutie zadávateľovi projektu na kontrolu.",
+            "Optimalizácia funkcií z prediction_utils, teraz dokážu rátať napríklad dice skóre aj s možnosťou iného počtu vrstiev.",
+            "Postupné dopĺňanie postupu práce a výsledkov z praktickej časti na webovú stránku projektu."
+        ]
+    },{
+        "date":"26.04.2024", 
+        "participation":["prítomná", "prítomná", "prítomný", "prítomný", "prítomný", "prítomný"], 
+        "description":[
+            "Review opráv a pripomienok k dokumentácii projektu.",
+            "   Odstrániť linky v zozname obrázkov",
+            "   Zjednotenie anglickej a slovenskej skratky na slovenskú z dôvodu jej zriedkavého výskytu",
+            "   Odstrániť zoznam algoritmov a výpisov, pretože tie nebolo potrebné pri našom projekte vytvárať",
+            "   V úvode opraviť a skonštruovať výstižný dôvod našej práce",
+            "   V praktickej časti dokumentácie doplniť na začiatok informácie o datasete Sanghai a to najmä čo sa týka našeho výberu snímok, zdroja odkiaľ dataset pochádza a tiež aké operácie sme nad snímkami museli vykonať",
+            "   Dôležitá oprava citácie, rôznych malých chýb",
+            "   Dopísať záver projektu, abstrakt nie je potrebný",
+            "   Do prílohy pridať aj zdrojové kódy"
+        ]
     }
 ]

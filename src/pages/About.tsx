@@ -1,7 +1,7 @@
 import { Container, Nav, Navbar as NavbarAbout } from "react-bootstrap";
 import MyTable from "../components/MyTable";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export function About() {
   const scrollToSection = (sectionId: string) => {
@@ -25,30 +25,40 @@ export function About() {
       >
         <Container className="pb-3">
           <NavbarAbout>
-            <Nav className="me-auto justify-content-center">
+            <Nav className="me-auto justify-content-center align-items-center">
               <Nav.Link
                 style={{ opacity: 0.2, color: "white" }}
                 onClick={() => scrollToSection("projectAssignment")}
               >
                 Zadanie projektu
               </Nav.Link>
+              <span style={{ opacity: 0.2, color: "white" }}>•</span>
               <Nav.Link
                 style={{ opacity: 0.2, color: "white" }}
                 onClick={() => scrollToSection("octTheory")}
               >
                 OCT teória
               </Nav.Link>
+              <span style={{ opacity: 0.2, color: "white" }}>•</span>
               <Nav.Link
                 style={{ opacity: 0.2, color: "white" }}
                 onClick={() => scrollToSection("databases")}
               >
-                Databázy
+                Použité dáta a ich spracovanie
               </Nav.Link>
+              <span style={{ opacity: 0.2, color: "white" }}>•</span>
               <Nav.Link
                 style={{ opacity: 0.2, color: "white" }}
                 onClick={() => scrollToSection("codeImplementation")}
               >
-                Implementácia do kódu
+                Implementácia
+              </Nav.Link>
+              <span style={{ opacity: 0.2, color: "white" }}>•</span>
+              <Nav.Link
+                style={{ opacity: 0.2, color: "white" }}
+                onClick={() => scrollToSection("results")}
+              >
+                Výsledky
               </Nav.Link>
             </Nav>
           </NavbarAbout>
@@ -184,33 +194,37 @@ export function About() {
                 </li>
                 <li>
                   <span className="fw-bold ">Vnútorná plexiformná vrstva</span>{" "}
-                  - v tejto vrstve skončia bipolárne bunky, čím sa vytvára
-                  synaptický kontakt s gangliovou bunkou zodpovedajúceho typu
+                  - obsahuje synaptické kontakty medzi bipolárnymi, amakrinnými
+                  a gangliovými bunkami. V tejto vrstve, "vypnuté" a "zapnuté"
+                  bipolárne bunky skončia, čím sa vytvorí synaptický kontakt s
+                  gangliovou bunkou zodpovedajúceho typu
                 </li>
                 <li>
-                  <span className="fw-bold ">Vnútorná jadrová vrstva</span> -
+                  <span className="fw-bold ">Vnútorná nukleárna vrstva</span> -
                   táto vrstva sa skladá z troch tried nervových buniek, ktoré
                   prenášajú vizuálne signály z fotoreceptorov do gangliových
                   buniek a tvarujú signály do vizuálnych tokov
                 </li>
                 <li>
                   <span className="fw-bold ">Vonkajšia plexiformná vrstva</span>{" "}
-                  - v tejto vrstve prebiehajú 2 synaptické interakcie:
-                  <ul>
-                    <li>
-                      <span className="fw-bold ">Vonkajšia jadrová vrstva</span>{" "}
-                      - rozdeľuje vizuálny signál do dvoch samostatných kanálov
-                      toku informácií, jeden pre detekciu objektov svetlejších
-                      ako pozadie a druhý tmavších a zároveň tým postupne
-                      vytvárame kontrast vizuálnych objektov
-                    </li>
-                    <li>
-                      <span className="fw-bold ">
-                        Vonkajšia obmedzujúca membrána
-                      </span>{" "}
-                      - obsahuje jadrá čapíkových a tyčinkových fotoreceptorov
-                    </li>
-                  </ul>
+                  - v tejto vrstve prebiehajú 2 synaptické interakcie,
+                  rozdelenie vizuálneho signálu do dvoch samostatných kanálov
+                  toku informácií, jeden na detekciu objektov svetlejších ako
+                  pozadie a druhý na detekciu objektov tmavších ako pozadie a
+                  vytvorenie kontrastu vizuálnych objektov
+                </li>
+                <li>
+                  <span className="fw-bold ">Vonkajšia nukleárna vrstva</span> -
+                  obsahuje jadrá čapíkových a tyčinkových fotoreceptorov a jej
+                  hrúbka je dôležitým biomarkerom degenerácií sietnice
+                </li>
+                <li>
+                  <span className="fw-bold ">
+                    Vonkajšia limitujúca membrána
+                  </span>{" "}
+                  - nachádza sa na základoch tyčiniek a čapíkov so štruktúrou
+                  podobnou sieti. Túto líniu tvoria spojovacie komplexy medzi
+                  fotoreceptormi a Müllerovými bunkami (podporné bunky)
                 </li>
                 <li>
                   <span className="fw-bold ">Elipsoidná zóna</span> - považuje
@@ -218,9 +232,10 @@ export function About() {
                   vizuálnych výsledkov pri mnohých ochoreniach sietnice
                 </li>
                 <li>
-                  <span className="fw-bold ">Interdigitačná zóna</span> - sa
-                  považuje za kontaktné valce tvorené vrcholmi buniek
-                  pigmentového epitelu sietnice
+                  <span className="fw-bold ">Interdigitačná zóna</span> - tvoria
+                  ju akoby kontaktné valce, ktoré sú ďalej tvorené vrcholmi
+                  buniek pigmentového epitelu sietnice, ktoré obklopujú časť
+                  vonkajších segmentov čapíkov
                 </li>
                 <li>
                   <span className="fw-bold ">Pigmentový epitel sietnice</span> -
@@ -235,15 +250,28 @@ export function About() {
               </ul>
             </div>
           </div>
-          <img
-            className="img-fluid"
-            src="./images/layers_sk.png"
-            alt="OCT layers"
+          <figure>
+            <img
+              className="img-fluid"
+              src="./images/layers_new.png"
+              alt="OCT layers"
+              style={{
+                borderRadius: "10px",
+                boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+              }}
+            />
+          </figure>
+          <figcaption
             style={{
-              borderRadius: "10px",
-              boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+              fontSize: "15px",
+              fontWeight: "bold",
+              /*margin: "30px 0 30px 40px",*/
+              lineHeight: "25px",
+              color: "#919191",
             }}
-          />
+          >
+            Obr. 1: Prierez normálnej makuly.
+          </figcaption>
         </section>
 
         <section
@@ -260,7 +288,7 @@ export function About() {
               fontSize: "43px",
             }}
           >
-            Databázy
+            Použité dáta a ich spracovanie
           </h2>
           <p
             style={{
@@ -270,25 +298,308 @@ export function About() {
               color: "#919191",
             }}
           >
-            Celkovo sme získali prístup k šiestim veľko-početným databázam,
-            ktoré sme analyzovali podľa niekoľkých kritérií. Uprednostňujeme
-            obrázky zdravých makúl pred chorými. V prípade, že sa jednalo o
-            choré snímky, zaznamenali sme typy choroby, o aké sa jednalo. Podľa
-            vzájomnej dohody a štandardov sme sa zhodli, že vyberieme a ďalej
-            budeme pracovať s databázou, ktorá ma na obrázkoch dokopy 9 vrstiev.
-            Pre účel našej práce je vhodné pracovať so segmentovanými obrázkami,
-            tzn. prierez makuly na danom obrázku je správne rozdelený na
-            jednotlivé vrstvy. Pre tieto podmienky nám najviac vyhovujú dva
-            datasety:{" "}
+            Komunikáciou s autormi podobných prác ako je tá naša a
+            organizáciami, ktoré disponovali potrebnými dátami, sme získali
+            prístup ku šiestim dátovým sadám. Z nich sme si vybrali práve jednu
+            a to{" "}
             <a href="https://people.duke.edu/~sf59/Chiu_BOE_2014_dataset.htm">
-              Sanghai
+              Shanghai
             </a>{" "}
-            a{" "}
-            <a href="https://www.openicpsr.org/openicpsr/project/108503/version/V1/view?path=/openicpsr/108503/fcr:versions/V1/Normal-Retinal-OCT-images&type=folder">
-              Waterloo
-            </a>
-            .
+            . Táto dátová sada obsahuje zdravé obrazy sietnice oka, ktoré sú aj
+            označené, resp. k nim bola odborne vypracovaná manuálna segmentácia
+            vrstiev. Trénovanie na obrazoch chorých sietnic by mohlo znižovať
+            výkon modelu na segmentáciu. Neoznačené dáta pri tzv. "supervised"
+            učení nemajú veľmi využitie.
           </p>
+          <p
+            style={{
+              fontSize: "15px",
+              /*margin: "30px 0 30px 40px",*/
+              lineHeight: "25px",
+              color: "#919191",
+            }}
+          >
+            Na obrázkoch nižšie vidíme, že špecialitou každého obrazu z tejto
+            dátovej sady je, že obsahuje aj očný nerv v centrálnej časti makuly
+            a tým pádom tam nie je prítomná fovea. Z masky tiež vidíme, že
+            sietnica je segmentovaná do deviatich vrstiev.
+          </p>
+          <Container>
+            <Row
+              className="mx-auto"
+              style={{
+                justifyContent: "center",
+                height: "100%",
+                display: "flex",
+              }}
+            >
+              <Col xs="auto" sm={8} md={8} lg xl xxl={4}>
+                <Row>
+                  <figure>
+                    <img
+                      className="img-fluid"
+                      src="./images/obraz.png"
+                      alt="OCT obraz"
+                      style={{
+                        borderRadius: "10px",
+                        boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                      }}
+                    />
+                  </figure>
+                </Row>
+                <Row>
+                  <figcaption
+                    style={{
+                      fontSize: "15px",
+                      fontWeight: "bold",
+                      /*margin: "30px 0 30px 40px",*/
+                      lineHeight: "25px",
+                      color: "#919191",
+                    }}
+                  >
+                    Obr. 2: Obraz OCT sietnice v dátovej sade Shanghai.
+                  </figcaption>
+                </Row>
+              </Col>
+              <Col xs="auto" sm={8} md={8} lg xl xxl={4}>
+                <Row>
+                  <figure>
+                    <img
+                      className="img-fluid"
+                      src="./images/maska.png"
+                      alt="OCT mask"
+                      style={{
+                        borderRadius: "10px",
+                        boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                      }}
+                    />
+                  </figure>
+                </Row>
+                <Row>
+                  <figcaption
+                    style={{
+                      fontSize: "15px",
+                      fontWeight: "bold",
+                      /*margin: "30px 0 30px 40px",*/
+                      lineHeight: "25px",
+                      color: "#919191",
+                    }}
+                  >
+                    Obr. 3: Maska sémantickej segmentácie obrazu v dátovej sade
+                    Shanghai.
+                  </figcaption>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+          <p
+            className="pt-5"
+            style={{
+              fontSize: "15px",
+              /*margin: "30px 0 30px 40px",*/
+              lineHeight: "25px",
+              color: "#919191",
+            }}
+          >
+            Pred samotným trénovaním sme museli na túto dátovú sadu aplikovať
+            sériu úprav. Medzi ne patria:
+          </p>
+          <ul
+            style={{
+              display: "inline-block",
+              textAlign: "left",
+              color: "#919191",
+            }}
+          >
+            <li>
+              <span className="fw-bold ">
+                Odstránenie očného nervu z obrazov
+              </span>{" "}
+              - časť očného nervu netvorí žiadnu z vrstiev sietnice. Ako sme si
+              vyššie mohli všimnúť, časť očného nervu tvorí samostatnú triedu
+              (čistá biela plocha narozdiel od iných odtieňov) a teda pre dobrú
+              výkonnosť modelu bolo potrebné ho odstrániť. Tento krok sme
+              dosiahli vymazaním 15% časť od stredu obrazu do oboch strán čím
+              sme získali dva obrazy o šírke 35% z pôvodného obrazu. Rovnaký
+              postup sme vykonali aj pre masky, aby sme zachovali
+              konzistentnosť.
+            </li>
+            <Container>
+              <Row
+                className="mx-auto"
+                style={{
+                  justifyContent: "center",
+                  height: "100%",
+                  display: "flex",
+                  textAlign: "center",
+                }}
+              >
+                <Col xs="auto" sm={8} md={8} lg xl xxl={4}>
+                  <Row className="pt-3">
+                    <Col>
+                      <figure>
+                        <img
+                          className="img-fluid"
+                          src="./images/lava-cast.png"
+                          alt="OCT obraz"
+                          style={{
+                            borderRadius: "10px",
+                            boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                          }}
+                        />
+                      </figure>
+                    </Col>
+                    <Col>
+                      <figure>
+                        <img
+                          className="img-fluid"
+                          src="./images/prava-cast.png"
+                          alt="OCT obraz"
+                          style={{
+                            borderRadius: "10px",
+                            boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                          }}
+                        />
+                      </figure>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <figcaption
+                      style={{
+                        fontSize: "15px",
+                        fontWeight: "bold",
+                        /*margin: "30px 0 30px 40px",*/
+                        lineHeight: "25px",
+                        color: "#919191",
+                      }}
+                    >
+                      Obr. 4: Ľavá a pravá strana obrazu po odstránení očného
+                      nervu.
+                    </figcaption>
+                  </Row>
+                </Col>
+                <Col xs="auto" sm={8} md={8} lg xl xxl={4}>
+                  <Row className="pt-3">
+                    <Col>
+                      <figure>
+                        <img
+                          className="img-fluid"
+                          src="./images/lava-cast-maska.png"
+                          alt="OCT mask"
+                          style={{
+                            borderRadius: "10px",
+                            boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                          }}
+                        />
+                      </figure>
+                    </Col>
+                    <Col>
+                      <figure>
+                        <img
+                          className="img-fluid"
+                          src="./images/prava-cast-maska.png"
+                          alt="OCT mask"
+                          style={{
+                            borderRadius: "10px",
+                            boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                          }}
+                        />
+                      </figure>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <figcaption
+                      style={{
+                        fontSize: "15px",
+                        fontWeight: "bold",
+                        /*margin: "30px 0 30px 40px",*/
+                        lineHeight: "25px",
+                        color: "#919191",
+                      }}
+                    >
+                      Obr. 5: Ľavá a pravá strana masky po odstránení očného
+                      nervu.
+                    </figcaption>
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
+            <li className="pt-5">
+              <span className="fw-bold ">
+                Odstránenie odrazov z okraju obrazov
+              </span>{" "}
+              - po natrénovaní prvého modelu sme si všimli nepresnosti v niektorých
+              maskách. Jedná sa pravdepodobne o nesprávne vytvorené OCT obrazy,
+              na ktorých je odraz. Vytvorený model dôsledkom toho označil aj časti 
+              obrazov, v ktorých je odraz ako validnéčasti vrstiev sietnice, čo 
+              výrazne zhoršilo výsledky modelu. Na základe toho sme sa 
+              rozhodli tieto časti obrazov odstrániť. Niektoré obrazy s výrazným 
+              odrazom sme odstránili z dátovej sady úplne.
+            </li>
+            <li>
+              <span className="fw-bold ">Augmentácia obrazov</span> - dátová
+              sada Shanghai disponovala veľmi malým počtom obrazov a to aj po
+              tom čo sme jej počet predošlím krokom zdvojnásobili. Je známe, že
+              modely strojového učenia potrebujú relatívne veľké množstvo dát
+              pre dobrú výkonnosť. Na tento účeľ slúži augmentácia, ktorá
+              aplikuje rôzne transformácie na pôvodné obrazy s cieľom vytvoriť
+              nové, zmenené verzie týchto obrazov. Práve vystavením modelu
+              širšiemu rozsahu variácií vstupných údajov sa model stane
+              schopnejším zvládať rôzne scenáre a podmienky. Aplikovali sme
+              viacero techník avšak nie každá dávala použiteľné výsledky pre náš
+              obraz. Preto sme sa rozhodli použiť techniky horizontálneho
+              obrátenia, zmeny jasu a kontrastu.
+            </li>
+            <li>
+              <span className="fw-bold ">Spracovanie masky obrazu</span> - každý
+              jeden pixel obrazov masiek má priradenú unikátnu RGB hodnotu,
+              ktorá predstavuje jednak jeho farbu v obraze, ale navyše to slúži
+              aj ako identifikátor, do ktorej triedy segmentácie daný pixel
+              patrí. Ako sme už vyššie spomenuli, masky v tejto dátovej sade sú
+              rozdelené do 9 vrstiev. Pixely patriace do jednej vrstvy / triedy
+              budú mať rovnakú farbu. Celkovo bude teda 9 rôznych farieb + 1
+              farba reprezentujúca pozadie kam patria všetky tie pixely, ktoré
+              nie sú súčasťou ani jednej z 9 vrstiev sietnice oka.
+            </li>
+            <li>
+              <span className="fw-bold ">
+                Vizualizácia masiek cez pôvodný obraz
+              </span>{" "}
+              - v tejto časti práce sme vytvorili vizualizátor, ktorý dokáže
+              jednotlivé vrstvy masky farebne odlíšiť a zobraziť na pôvodnom
+              obraze s cieľom presnejšej vizuálnej kontroly správnosti, resp.
+              presnosti predpovedanej masky po vyhodnotení modelu, pretože
+              nemusí úplne zodpovedať pravdivej maske. Ide teda o prenos
+              informácie z jedného obrazu do druhého. Na obrázku nižšie je
+              zatiaľ len zobrazenie pravdivej masky na pôvodný obraz, teda obraz
+              má správne zaradenie pixelov do vrstiev. Zobrazenie predpovedanej
+              masky modelom nájdete v neskoršej časti.
+            </li>
+          </ul>
+          <Container className="pt-3 col-xs-8 col-sm-8 col-md-8 col-lg-7 col-xl-6 col-xxl-4">
+            <figure>
+              <img
+                className="img-fluid"
+                src="./images/vizualizacia_fovea.png"
+                alt="Aplikovanie vizualizátora"
+                style={{
+                  borderRadius: "10px",
+                  boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                }}
+              />
+            </figure>
+            <figcaption
+              style={{
+                fontSize: "15px",
+                fontWeight: "bold",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Obr. 6: Vizualizácia vrstiev na pôvodný obraz s nervom.
+            </figcaption>
+          </Container>
         </section>
         <section
           id="codeImplementation"
@@ -296,54 +607,129 @@ export function About() {
           style={{
             /*padding: "0 150px 0 150px",*/
             /*width: "60%",*/
-            color: "#fff"
+            color: "#fff",
           }}
         >
           <Container>
-                <h2
-                  style={{
-                    fontSize: "43px",
-                  }}
-                >
-                  Implementácia do kódu
-                </h2>
-                <Row>
-                  <Col sm={8}>
-                    <p
-                      style={{
-                        fontSize: "15px",
-                        /*margin: "30px 0 30px 40px",*/
-                        lineHeight: "25px",
-                        color: "#919191",
-                      }}
-                    >
-                      Načítajú sa obrázky. Z masky, ktorá obsahuje RGB hodnoty farieb
-                      spravíme masku, ktorá obsahuje čísla tried jednotlivých vrstiev
-                      (hodnoty od 0 po 9). Všetky obrázky sú resize-nuté na jednu
-                      veľkosť a je z nich vytvorená trénovacia, validačná a testovacia
-                      množina, s ktorými sa potom trénujeme sieť alebo vykonávame
-                      predikcie.
-                    </p>
-                    <p></p>
-                  </Col>
-                  <Col sm={4}>
-                    <img
-                      className="img-fluid"
-                      src="./images/img_with_mask_trans_inv.png"
-                      alt="OCT layers"
-                    />
-                  </Col>
-                </Row>
-                <h2
-                  style={{
-                    fontSize: "33px"
-                  }} 
-                  className='mb-4'
-                >
-                  Porovnanie úspešnosti modelov
-                </h2>
-                <MyTable />
-              </Container>
+            <h2
+              style={{
+                fontSize: "43px",
+              }}
+            >
+              Implementácia
+            </h2>
+            <div
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              <h4 style={{ fontWeight: "bolder" }}>Model</h4>
+            </div>
+            <p
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Výber modelu siete sme realizovali na základe úspešnosti výsledkov
+              riešení od iných autorov a rozhodli sme sa pre model siete{" "}
+              <strong>U-net</strong>. U-net je architektúra na sémantickú
+              segmentáciu. Skladá sa z kontrakčnej cesty a rozširujúcej cesty.
+              Kontrakčná cesta sa riadi typickou architektúrou konvolučnej
+              siete. Pozostáva z opakovaného použitia dvoch konvolúcií 3x3, po
+              ktorých nasleduje rektifikovaná lineárna jednotka (ReLU) a
+              operácia 2x2 max pooling s krokom 2 na zníženie vzorkovania. Za
+              každým čo znížime vzorkovanie zdvojnásobíme počet kanálov funkcie.
+            </p>
+            <p
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Každý krok v rozširujúcej ceste pozostáva z prevzorkovania mapy
+              príznakov, po ktorom nasleduje konvolúcia 2x2, ktorá znižuje počet
+              kanálov príznakov na polovicu, spojenie so zodpovedajúcou orezanou
+              mapou príznakov z kontrakčnej cesty a dve konvolúcie 3x3, po
+              ktorých nasleduje ReLU. V poslednej vrstve sa použije konvolúcia
+              1x1 na mapovanie každého 64-komponentného vektora príznakov na
+              požadovaný počet tried. Celkovo má sieť 23 konvolučných vrstiev.
+            </p>
+            <p
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Načítajú sa obrázky. Z masky, ktorá obsahuje RGB hodnoty farieb
+              spravíme masku, ktorá obsahuje čísla tried jednotlivých vrstiev
+              (hodnoty od 0 po 9). Všetky obrázky sú resize-nuté na jednu
+              veľkosť a je z nich vytvorená trénovacia, validačná a testovacia
+              množina, s ktorými sa potom trénujeme sieť alebo vykonávame
+              predikcie.
+            </p>
+            <div
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              <h4 style={{ fontWeight: "bolder" }}>Metriky</h4>
+            </div>
+            <p
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+
+            </p>
+          </Container>
+        </section>
+        <section
+          id="results"
+          className="pt-5 mx-auto col-sm-12 col-md-8 px-2"
+          style={{
+            /*padding: "0 150px 0 150px",*/
+            /*width: "60%",*/
+            color: "#fff",
+          }}
+        >
+          <Container>
+            <h2
+              style={{
+                fontSize: "43px",
+              }}
+            >
+              Výsledky
+            </h2>
+            <div
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              <h4 style={{ fontWeight: "bolder" }}>
+                Porovnanie úspešnosti modelov
+              </h4>
+              <MyTable />
+            </div>
+          </Container>
         </section>
       </div>
     </>

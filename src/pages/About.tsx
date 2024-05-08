@@ -25,7 +25,7 @@ export function About() {
       >
         <Container className="pb-3">
           <NavbarAbout>
-            <Nav className="me-auto justify-content-center align-items-center">
+            <Nav className="me-auto justify-content-center align-items-center flex-wrap">
               <Nav.Link
                 style={{ opacity: 0.2, color: "white" }}
                 onClick={() => scrollToSection("projectAssignment")}
@@ -528,13 +528,13 @@ export function About() {
               <span className="fw-bold ">
                 Odstránenie odrazov z okraju obrazov
               </span>{" "}
-              - po natrénovaní prvého modelu sme si všimli nepresnosti v niektorých
-              maskách. Jedná sa pravdepodobne o nesprávne vytvorené OCT obrazy,
-              na ktorých je odraz. Vytvorený model dôsledkom toho označil aj časti 
-              obrazov, v ktorých je odraz ako validnéčasti vrstiev sietnice, čo 
-              výrazne zhoršilo výsledky modelu. Na základe toho sme sa 
-              rozhodli tieto časti obrazov odstrániť. Niektoré obrazy s výrazným 
-              odrazom sme odstránili z dátovej sady úplne.
+              - po natrénovaní prvého modelu sme si všimli nepresnosti v
+              niektorých maskách. Jedná sa pravdepodobne o nesprávne vytvorené
+              OCT obrazy, na ktorých je odraz. Vytvorený model dôsledkom toho
+              označil aj časti obrazov, v ktorých je odraz ako validnéčasti
+              vrstiev sietnice, čo výrazne zhoršilo výsledky modelu. Na základe
+              toho sme sa rozhodli tieto časti obrazov odstrániť. Niektoré
+              obrazy s výrazným odrazom sme odstránili z dátovej sady úplne.
             </li>
             <li>
               <span className="fw-bold ">Augmentácia obrazov</span> - dátová
@@ -695,8 +695,55 @@ export function About() {
                 color: "#919191",
               }}
             >
-
+              Okrem vizuálneho vyhodnotenia, aké sme spomenuli vyššie, je
+              potrebné vyhodnotenie presnej numerickej hodnoty. Tie získame
+              pomocou metrík. Celkovo sme využili 5 metrík, ktoré sú však
+              rozšírením základnej pixelovej presnosti a Diceovho koeficientu.
             </p>
+            <ul
+              style={{
+                display: "inline-block",
+                textAlign: "left",
+                color: "#919191",
+              }}
+            >
+              <li>
+                <span className="fw-bold ">Pixelová presnosť</span> - hodnotiaca
+                metrika používaná na meranie celkovej presnosti segmentačného
+                algoritmu. Je definovaná ako pomer počtu správne klasifikovaných
+                pixelov k celkovému počtu pixelov na obrázku. Presnosť pixelov
+                môže byť však citlivá na nerovnováhu tried (prípad, kedy má
+                jedna trieda podstatne viac pixelov ako druhá). Pre naše obrazy
+                vzhľadom nato, že sú všetky tvorené z menšej časti vrstvami
+                sietnice a väčšej časti pozadím, môže to viesť k neobjektívnemu
+                vyhodnoteniu výkonu modelu. Preto sme sa rozhodli aplikovať
+                pixelovú presnosť len na samotných vrstvách bez pozadia.
+                Výsledná presnosť nám potom vyšla 0.766 oproti pôvodnej metrike
+                aplikovanej na celý obraz, kde nám presnosť vyšla 0.956.
+              </li>
+              <li>
+                <span className="fw-bold ">Diceov koeficient</span> - diceov
+                koeficient meria podobnosť medzi skutočnou segmentáciou a
+                predpovedanou segmentáciou. Ide o populárnu metriku pre
+                segmentáciu obrazov, pretože je citlivá na malé zmeny v
+                segmentácii a nie je ovplyvnená nerovnováhou tried. Vo svojej
+                podstate je to však binárna metrika, čo znamená, že porovnáva
+                obrazy, ktorých pixely patria do jednej z dvoch tried.
+                Segmentácia vrstiev makuly však pozostáva zo zaradenia do 10
+                tried, resp. 9 vrstiev a pozadia. V takomto prípade počítame
+                Diceov koeficient pre každú vrstvu zvlášť, pričom oblasť záujmu
+                bude práve tá jedna vrstva a všetky ostatné pixely budú brané
+                ako pozadie. Výsledný Diceov koeficient bude následne
+                aritmetický priemer z hodnôt pre jednotlivé vrstvy. Tu však
+                nastáva spomínaný problém s nevyváženosťou tried, kde by boli
+                výsledky vychýlené v prospech triedy, ktorá má vyšší Diceov
+                koeficient. Preto sme navyše zaviedli aj tzv. vážený priemerný
+                Diceov koeficient, ktorý pri výpočte berie do úvahy aj celkový
+                počet pixelov priradený jednotlivým vrstvám. Avšak, vzhľadom na
+                to, že sa táto upravená metrika v literatúre a ani iných prácach
+                nepoužíva, výkonnosť vyhodnocujeme cez aritmetický priemer.
+              </li>
+            </ul>
           </Container>
         </section>
         <section
@@ -716,6 +763,44 @@ export function About() {
             >
               Výsledky
             </h2>
+            <p
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Pre účely tejto práce sme vytvorili a natrénovali spolu 8 modelov.
+              Všetky tieto modely mali rovnakú U-Net architektúru. Drobným rozdielom
+              medzi jednotlivými modelmi bol počet epoch, na ktoré sme trénovanie 
+              nastavili. Najhlavnejším rozdielom boli dátové sady, na ktorých boli 
+              modely trénované. 
+            </p>
+
+            <div
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              <h4 style={{ fontWeight: "bolder" }}>Najhorší model</h4>
+            </div>
+
+            <div
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              <h4 style={{ fontWeight: "bolder" }}>Najlepší model</h4>
+            </div>
+
+
             <div
               style={{
                 fontSize: "15px",

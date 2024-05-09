@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import DownloadButton from "../components/DownloadButton";
 
 export function Home() {
   return (
@@ -13,6 +14,9 @@ export function Home() {
         }}
       >
         <h1 className="text-center">WELCOME</h1>
+        <div className="text-center w-100 h-100" style={{alignContent: "center"}}>
+        <DownloadButton />
+        </div>
       </Container>
     </>
   );

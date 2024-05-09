@@ -302,7 +302,7 @@ export function About() {
             organizáciami, ktoré disponovali potrebnými dátami, sme získali
             prístup ku šiestim dátovým sadám. Z nich sme si vybrali práve jednu
             a to{" "}
-            <a href="https://people.duke.edu/~sf59/Chiu_BOE_2014_dataset.htm">
+            <a href="https://people.duke.edu/~sf59/Chiu_BOE_2014_dataset.htm" style={{color: "#341381"}}>
               Shanghai
             </a>{" "}
             . Táto dátová sada obsahuje zdravé obrazy sietnice oka, ktoré sú aj
@@ -898,17 +898,15 @@ export function About() {
               Najlepším modelom podľa priemerného Diceovho koeficientu spomedzi
               natrénovaných modelov bol model trénovaný na obrazoch bez
               zrakového nervu a bez odrazov na okraji a bol aj rozšírený o
-              augmentáciu obrazov pomocou spomínaných techník. Tento model
-              dosiahol priemerný Diceov koeficient <strong>0.845</strong>
-              Pixelová presnosť na vrstvách bola <strong>0.870</strong>, model
-              dosiahol priemerný Diceov koeficient
-              <strong>0.845</strong> a vážený priemerný Diceov koeficient bol{" "}
-              <strong>0.880</strong>. Tieto výsledky sa už dokázali vyrovnať
-              prácam ostatných autorov. Tým pádom môžeme tento model, z hľadiska
-              numerickej úspešnosti, považovať za dostatočný a výkonný. Výstup
-              modelu si tiež vizualizujeme pomocou vytvoreného vizualizéra,
-              tento krát však už iba pre obraz čistej makuly bez očného nervu,
-              pretože ten už upravený dataset neobsahuje.
+              augmentáciu obrazov pomocou spomínaných techník. Pixelová presnosť
+              na vrstvách bola <strong>0.870</strong>, model dosiahol priemerný
+              Diceov koeficient <strong>0.845</strong> a vážený priemerný Diceov
+              koeficient bol <strong>0.880</strong>. Tieto výsledky sa už
+              dokázali vyrovnať prácam ostatných autorov. Tým pádom môžeme tento
+              model, z hľadiska numerickej úspešnosti, považovať za dostatočný a
+              výkonný. Výstup modelu si tiež vizualizujeme pomocou vytvoreného
+              vizualizéra, tento krát však už iba pre obraz čistej makuly bez
+              očného nervu, pretože ten už upravený dataset neobsahuje.
             </p>
             <Container className="pt-3 col-xs-8 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-7">
               <figure>

@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found</title>
   <script>
-    window.location.href = 'https://peterkoxcode.github.io/web-tp/';
+    // Get the current path
+    var currentPath = window.location.pathname;
+
+    // Redirect back to the current path
+    window.location.href = currentPath;
   </script>
 </head>
 <body>

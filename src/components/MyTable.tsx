@@ -6,6 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import Link from "@mui/material/Link";
 
 const StyledTableCell = styled(TableCell)(() => ({
   [`&.${tableCellClasses.head}`]: {
@@ -30,36 +31,35 @@ const StyledTableRow = styled(TableRow)(() => ({
   },
 }));
 
-function createData(vyskum: string, architektura: string, dice: number) {
-  return { vyskum, architektura, dice };
+function createData(vyskum: string, link: string, architektura: string, dice: number) {
+  return { vyskum, link, architektura, dice };
 }
 
 const rows = [
-  createData("Biomed. Opt. Express", "MGU-Net", 0.881),
-  createData("Biomed. Opt. Express", "U-Net", 0.847),
-  createData("A. Sampath Kumar, T. Schlosser, et al.", "Modified U-Net", 0.825),
-  createData("Náš TP", "U-Net", 0.82),
-  createData("Náš TP", "U-Net (Augmentácia)", 0.845),
+  createData("Biomed. Opt. Express", "https://opg.optica.org/boe/fulltext.cfm?uri=boe-12-4-2204&id=449401", "MGU-Net", 0.881),
+  createData("Biomed. Opt. Express", "https://opg.optica.org/boe/fulltext.cfm?uri=boe-12-4-2204&id=449401", "U-Net", 0.847),
+  createData("Neurocomputing", "https://www.sciencedirect.com/science/article/abs/pii/S0925231222012620", "VGG16 U-Net", 0.906),
+  createData("Náš TP", "https://peterkoxcode.github.io/web-tp/", "U-Net", 0.845),
 ];
 
 type Props = {};
 
 export default function MyTable({}: Props) {
   return (
-    <TableContainer component={Paper} className="w-75 m-auto" >
+    <TableContainer component={Paper} className="w-75 m-auto">
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell align="center">Výskum</StyledTableCell>
-            <StyledTableCell align="center">Architektúra</StyledTableCell>
-            <StyledTableCell align="center">Dice skóre</StyledTableCell>
+            <StyledTableCell align="center" style={{fontWeight:"bold"}}>Výskum</StyledTableCell>
+            <StyledTableCell align="center" style={{fontWeight:"bold"}}>Architektúra</StyledTableCell>
+            <StyledTableCell align="center" style={{fontWeight:"bold"}}>Dice skóre</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.vyskum}>
               <StyledTableCell align="center" component="th" scope="row">
-                {row.vyskum}
+                <Link href={row.link} underline="hover" color="#345381" fontWeight="bold" target="_blank">{row.vyskum}</Link>
               </StyledTableCell>
               <StyledTableCell align="center">
                 {row.architektura}

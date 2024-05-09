@@ -531,7 +531,7 @@ export function About() {
               - po natrénovaní prvého modelu sme si všimli nepresnosti v
               niektorých maskách. Jedná sa pravdepodobne o nesprávne vytvorené
               OCT obrazy, na ktorých je odraz. Vytvorený model dôsledkom toho
-              označil aj časti obrazov, v ktorých je odraz ako validnéčasti
+              označil aj časti obrazov, v ktorých je odraz ako validné časti
               vrstiev sietnice, čo výrazne zhoršilo výsledky modelu. Na základe
               toho sme sa rozhodli tieto časti obrazov odstrániť. Niektoré
               obrazy s výrazným odrazom sme odstránili z dátovej sady úplne.
@@ -548,7 +548,7 @@ export function About() {
               schopnejším zvládať rôzne scenáre a podmienky. Aplikovali sme
               viacero techník avšak nie každá dávala použiteľné výsledky pre náš
               obraz. Preto sme sa rozhodli použiť techniky horizontálneho
-              obrátenia, zmeny jasu a kontrastu.
+              obrátenia, škálovania, zmeny jasu a kontrastu.
             </li>
             <li>
               <span className="fw-bold ">Spracovanie masky obrazu</span> - každý
@@ -772,10 +772,10 @@ export function About() {
               }}
             >
               Pre účely tejto práce sme vytvorili a natrénovali spolu 8 modelov.
-              Všetky tieto modely mali rovnakú U-Net architektúru. Drobným rozdielom
-              medzi jednotlivými modelmi bol počet epoch, na ktoré sme trénovanie 
-              nastavili. Najhlavnejším rozdielom boli dátové sady, na ktorých boli 
-              modely trénované. 
+              Všetky tieto modely mali rovnakú U-Net architektúru. Drobným
+              rozdielom medzi jednotlivými modelmi bol počet epoch, na ktoré sme
+              trénovanie nastavili. Najhlavnejším rozdielom boli dátové sady, na
+              ktorých boli modely trénované.
             </p>
 
             <div
@@ -799,7 +799,6 @@ export function About() {
             >
               <h4 style={{ fontWeight: "bolder" }}>Najlepší model</h4>
             </div>
-
 
             <div
               style={{

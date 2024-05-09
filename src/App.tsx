@@ -1,6 +1,6 @@
 //import { Container } from "react-bootstrap";
 import { Navbar } from "./components/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { MinuteBook } from "./pages/MinuteBook";
@@ -17,6 +17,8 @@ export function App({}: Props) {
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
         <Route path="/minute-book" element={<MinuteBook />} />
+        <Route path="*" element={<Navigate to="/" />} />{" "}
+        {/* Redirect to Home */}
       </Routes>
     </>
   );

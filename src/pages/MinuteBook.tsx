@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { MyModal } from "../components/MyModal";
 import Records from "../data/zapisnica.json";
 import Records2 from "../data/zapisnica2.json";
@@ -53,10 +53,30 @@ export function MinuteBook() {
   */
   return (
     <>
-      <Container className="text-center pt-3">
-        <h1>Zápisnica</h1>
+      <div
+        className=" text-center py-5 pt-8"
+        style={{
+          width: "100%",
+          height: "100vh",
+          margin: 0,
+          background: "#dcdde9",
+          color: "black",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      >
+        <h1
+          style={{
+            background: "#928ea5",
+            padding: "20px",
+            borderTop: "1px rgb(66 64 74) solid",
+            borderBottom: "1px rgb(66 64 74) solid",
+          }}
+        >
+          MINUTE BOOK
+        </h1>
         <br />
-        <Row className="my-3 mx-auto justify-content-center align-items-center">
+        <Row className="my-sm-2 my-lg-3 mx-auto justify-content-center align-items-center">
           <Col xs={3}>
             <hr />
           </Col>
@@ -83,7 +103,7 @@ export function MinuteBook() {
             );
           })}
         </Row>
-        <Row className="my-3 mx-auto justify-content-center align-items-center">
+        <Row className="my-sm-2 my-lg-3 mx-auto justify-content-center align-items-center">
           <Col xs={3}>
             <hr />
           </Col>
@@ -110,7 +130,7 @@ export function MinuteBook() {
             );
           })}
         </Row>
-      </Container>
+      </div>
     </>
   );
 }

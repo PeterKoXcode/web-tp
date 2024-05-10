@@ -302,7 +302,10 @@ export function About() {
             organizáciami, ktoré disponovali potrebnými dátami, sme získali
             prístup ku šiestim dátovým sadám. Z nich sme si vybrali práve jednu
             a to{" "}
-            <a href="https://people.duke.edu/~sf59/Chiu_BOE_2014_dataset.htm" style={{color: "#341381"}}>
+            <a
+              href="https://people.duke.edu/~sf59/Chiu_BOE_2014_dataset.htm"
+              style={{ color: "#341381" }}
+            >
               Shanghai
             </a>{" "}
             . Táto dátová sada obsahuje zdravé obrazy sietnice oka, ktoré sú aj
@@ -674,7 +677,7 @@ export function About() {
               spravíme masku, ktorá obsahuje čísla tried jednotlivých vrstiev
               (hodnoty od 0 po 9). Všetky obrázky sú resize-nuté na jednu
               veľkosť a je z nich vytvorená trénovacia, validačná a testovacia
-              množina, s ktorými sa potom trénujeme sieť alebo vykonávame
+              množina, s ktorými potom trénujeme sieť alebo vykonávame
               predikcie.
             </p>
             <div
@@ -717,9 +720,12 @@ export function About() {
                 vzhľadom nato, že sú všetky tvorené z menšej časti vrstvami
                 sietnice a väčšej časti pozadím, môže to viesť k neobjektívnemu
                 vyhodnoteniu výkonu modelu. Preto sme sa rozhodli aplikovať
-                pixelovú presnosť len na samotných vrstvách bez pozadia.
-                Výsledná presnosť nám potom vyšla 0.766 oproti pôvodnej metrike
-                aplikovanej na celý obraz, kde nám presnosť vyšla 0.956.
+                pixelovú presnosť len na samotných vrstvách bez pozadia. Po jej
+                aplikácii na jeden konkrétny obraz s predpovedanou maskou sme
+                získali celkovú pixelovú presnosť 0.956, zatiaľ čo pixelová
+                presnosť len na vrstvách vyšla o takmer 0.20 nižšie, konkrétne
+                0.766. Toto pekne ilustruje, ako môže byť táto metrika
+                skreslená.
               </li>
               <li>
                 <span className="fw-bold ">Diceov koeficient</span> - diceov
@@ -737,11 +743,13 @@ export function About() {
                 aritmetický priemer z hodnôt pre jednotlivé vrstvy. Tu však
                 nastáva spomínaný problém s nevyváženosťou tried, kde by boli
                 výsledky vychýlené v prospech triedy, ktorá má vyšší Diceov
-                koeficient. Preto sme navyše zaviedli aj tzv. vážený priemerný
-                Diceov koeficient, ktorý pri výpočte berie do úvahy aj celkový
-                počet pixelov priradený jednotlivým vrstvám. Avšak, vzhľadom na
-                to, že sa táto upravená metrika v literatúre a ani iných prácach
-                nepoužíva, výkonnosť vyhodnocujeme cez aritmetický priemer.
+                koeficient bez ohľadu na jej veľkosť. Preto sme navyše zaviedli
+                aj tzv. vážený priemerný Diceov koeficient, ktorý pri výpočte
+                berie do úvahy aj celkový počet pixelov priradený jednotlivým
+                vrstvám. Avšak, vzhľadom na to, že sa táto upravená metrika v
+                literatúre a ani iných prácach nepoužíva, tak má len
+                informatívny charakter a výkonnosť vyhodnocujeme cez aritmetický
+                priemer.
               </li>
             </ul>
           </Container>
@@ -944,7 +952,7 @@ export function About() {
               Z vizualizácii je vidieť, že predpovedané vrstvy sú celkom podobné
               pravdivým vrstvám. Aj vizuálna kontrola výsledku teda potvrdzuje
               numerické výsledky tohto modelu. Nižšie poskytujeme prehľad
-              výsledného porovnania úspešnosti výsledkov našeho najlepšieho
+              výsledného porovnania úspešnosti výsledkov nášho najlepšieho
               modelu s modelmi prác ostatných autorov.
             </p>
             <div

@@ -57,7 +57,7 @@ export function MinuteBook() {
         className=" text-center py-5 pt-8"
         style={{
           width: "100%",
-          height: "100vh",
+          height: "110vh",
           margin: 0,
           background: "#dcdde9",
           color: "black",

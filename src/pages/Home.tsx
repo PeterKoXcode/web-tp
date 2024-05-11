@@ -4,6 +4,8 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import DownloadButton from "../components/DownloadButton";
 import ListItemButton from "@mui/material/ListItemButton";
+import { Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 export function Home() {
   return (
@@ -43,29 +45,59 @@ export function Home() {
             backgroundColor: "#928ea5",
           }}
         >
-          <ListItem disablePadding>
-            <ListItemButton href="about">
-              <ListItemText
-                className="text-center"
-                primary="Read about project"
-              />
-            </ListItemButton>
-          </ListItem>
+          <Nav className="me-auto">
+            <Nav.Link
+              className="w-100 p-0"
+              to="/about"
+              as={NavLink}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem disablePadding>
+                <ListItemButton href="about">
+                  <ListItemText
+                    className="text-center"
+                    primary="Read about project"
+                  />
+                </ListItemButton>
+              </ListItem>
+            </Nav.Link>
+          </Nav>
           <Divider component="li" />
-          <ListItem disablePadding>
-            <ListItemButton href="team">
-              <ListItemText
-                className="text-center"
-                primary="Read about team members"
-              />
-            </ListItemButton>
-          </ListItem>
+          <Nav className="me-auto">
+            <Nav.Link
+              className="w-100 p-0"
+              to="/team"
+              as={NavLink}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem disablePadding>
+                <ListItemButton href="team">
+                  <ListItemText
+                    className="text-center"
+                    primary="Read about team members"
+                  />
+                </ListItemButton>
+              </ListItem>
+            </Nav.Link>
+          </Nav>
           <Divider component="li" />
-          <ListItem disablePadding>
-            <ListItemButton href="minute-book">
-              <ListItemText className="text-center" primary="Our minute book" />
-            </ListItemButton>
-          </ListItem>
+          <Nav className="me-auto">
+            <Nav.Link
+              className="w-100 p-0"
+              to="/minute-book"
+              as={NavLink}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem disablePadding>
+                <ListItemButton href="minute-book">
+                  <ListItemText
+                    className="text-center"
+                    primary="Our minute book"
+                  />
+                </ListItemButton>
+              </ListItem>
+            </Nav.Link>
+          </Nav>
         </List>
         <div className="mt-5">
           <DownloadButton />

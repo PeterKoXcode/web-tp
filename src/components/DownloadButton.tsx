@@ -1,6 +1,6 @@
 import Button from "@mui/material/Button";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
-import UserManual from '../../public/pouzivatelska_prirucka.pdf';
+import UserManual from '../../public/user-manual.pdf';
 
 export default function InputFileUpload() {
   return (

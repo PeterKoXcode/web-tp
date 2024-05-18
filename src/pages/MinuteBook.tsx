@@ -73,7 +73,7 @@ export function MinuteBook() {
             borderBottom: "1px rgb(66 64 74) solid",
           }}
         >
-          MINUTE BOOK
+          ZÁPISNICA
         </h1>
         <br />
         <div className="container" style={{ background: "#dcdde9" }}>

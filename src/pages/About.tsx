@@ -37,7 +37,7 @@ export function About() {
                 style={{ opacity: 0.2, color: "white" }}
                 onClick={() => scrollToSection("octTheory")}
               >
-                OCT teória
+                Sietnica oka, jej vrstvy a snímanie obrazov pomocou OCT
               </Nav.Link>
               <span style={{ opacity: 0.2, color: "white" }}>•</span>
               <Nav.Link
@@ -133,7 +133,7 @@ export function About() {
                 fontSize: "43px",
               }}
             >
-              OCT teória
+              Sietnica oka, jej vrstvy a snímanie obrazov pomocou OCT
             </h2>
             <div
               style={{
@@ -308,7 +308,7 @@ export function About() {
             >
               Shanghai
             </a>{" "}
-            . Táto dátová sada obsahuje zdravé obrazy sietnice oka, ktoré sú aj
+            . Táto dátová sada obsahuje zdravé OCT obrazy zrakového nervu, ktoré sú aj
             označené, resp. k nim bola odborne vypracovaná manuálna segmentácia
             vrstiev. Trénovanie na obrazoch chorých sietnic by mohlo znižovať
             výkon modelu na segmentáciu. Neoznačené dáta pri tzv. "supervised"
@@ -323,8 +323,8 @@ export function About() {
             }}
           >
             Na obrázkoch nižšie vidíme, že špecialitou každého obrazu z tejto
-            dátovej sady je, že obsahuje aj očný nerv v centrálnej časti makuly
-            a tým pádom tam nie je prítomná fovea. Z masky tiež vidíme, že
+            dátovej sady je, že obsahuje aj očný nerv v centrálnej časti obrazu
+            a tým pádom tam nie je prítomná makula. Z masky tiež vidíme, že
             sietnica je segmentovaná do deviatich vrstiev.
           </p>
           <Container>
@@ -786,8 +786,77 @@ export function About() {
               ktorých boli modely trénované. V predošlej sekcii sme uviedli
               rôzne etapy spracovania vstupnej dátovej sady Shanghai, vďaka
               ktorým sme získali až 5 verzií dátových sád. V nasledujúcej časti
-              si zo spomínaných 8 modelov vyberieme a porovnáme celkovo najhorší
-              a najlepší z nich.
+              si zo spomínaných 8 modelov vyberieme a porovnáme celkovo najlepší
+              a najhorší z nich.
+            </p>
+
+            <div
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              <h4 style={{ fontWeight: "bolder" }}>Najlepší model</h4>
+            </div>
+            <p
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Najlepším modelom podľa priemerného Diceovho koeficientu spomedzi
+              natrénovaných modelov bol model trénovaný na obrazoch bez
+              zrakového nervu a bez odrazov na okraji a bol aj rozšírený o
+              augmentáciu obrazov pomocou spomínaných techník. Pixelová presnosť
+              na vrstvách bola <strong>0.870</strong>, model dosiahol priemerný
+              Diceov koeficient <strong>0.845</strong> a vážený priemerný Diceov
+              koeficient bol <strong>0.880</strong>. Tieto výsledky sa už
+              dokázali vyrovnať prácam ostatných autorov. Tým pádom môžeme tento
+              model, z hľadiska numerickej úspešnosti, považovať za dostatočný a
+              výkonný. Výstup modelu si tiež vizualizujeme pomocou vytvoreného
+              vizualizéra a to pre obraz čistej makuly bez
+              očného nervu, pretože ten už upravený dataset neobsahuje.
+            </p>
+            <Container className="pt-3 col-xs-8 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-7">
+              <figure>
+                <img
+                  className="img-fluid"
+                  src="./images/best.png"
+                  alt="Makula - najlepší model"
+                  style={{
+                    borderRadius: "10px",
+                    boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
+                  }}
+                />
+              </figure>
+              <figcaption
+                style={{
+                  fontSize: "15px",
+                  fontWeight: "bold",
+                  /*margin: "30px 0 30px 40px",*/
+                  lineHeight: "25px",
+                  color: "#919191",
+                }}
+              >
+                Obr. 7: Vizualizácia predikcie na makule pre najlepší model.
+              </figcaption>
+            </Container>
+            <p
+              className="pt-5"
+              style={{
+                fontSize: "15px",
+                /*margin: "30px 0 30px 40px",*/
+                lineHeight: "25px",
+                color: "#919191",
+              }}
+            >
+              Z vizualizácii je vidieť, že predpovedané vrstvy sú celkom podobné
+              pravdivým vrstvám. Aj vizuálna kontrola výsledku teda potvrdzuje
+              numerické výsledky tohto modelu.
             </p>
 
             <div
@@ -842,7 +911,7 @@ export function About() {
                   color: "#919191",
                 }}
               >
-                Obr. 7: Vizualizácia predikcie na makule pre najhorší model.
+                Obr. 8: Vizualizácia predikcie na OCT zrakového nervu pre najhorší model.
               </figcaption>
             </Container>
             <Container className="pt-3 col-xs-8 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-7">
@@ -866,7 +935,7 @@ export function About() {
                   color: "#919191",
                 }}
               >
-                Obr. 8: Vizualizácia predikcie na makule s očným nervom pre
+                Obr. 9: Vizualizácia predikcie na makule s očným nervom pre
                 najhorší model.
               </figcaption>
             </Container>
@@ -883,75 +952,7 @@ export function About() {
               výrazne líšia od pravdivých vrstiev. Model presnejšie predpovedal
               rozsiahlejšie vrstvy (napr. červená spodná vrstva) a menej presne
               predpovedal tenšie vrstvy (vrchné vrstvy). Presnosť získaná týmto
-              modelom nie je postačujúca.
-            </p>
-            <div
-              style={{
-                fontSize: "15px",
-                /*margin: "30px 0 30px 40px",*/
-                lineHeight: "25px",
-                color: "#919191",
-              }}
-            >
-              <h4 style={{ fontWeight: "bolder" }}>Najlepší model</h4>
-            </div>
-            <p
-              style={{
-                fontSize: "15px",
-                /*margin: "30px 0 30px 40px",*/
-                lineHeight: "25px",
-                color: "#919191",
-              }}
-            >
-              Najlepším modelom podľa priemerného Diceovho koeficientu spomedzi
-              natrénovaných modelov bol model trénovaný na obrazoch bez
-              zrakového nervu a bez odrazov na okraji a bol aj rozšírený o
-              augmentáciu obrazov pomocou spomínaných techník. Pixelová presnosť
-              na vrstvách bola <strong>0.870</strong>, model dosiahol priemerný
-              Diceov koeficient <strong>0.845</strong> a vážený priemerný Diceov
-              koeficient bol <strong>0.880</strong>. Tieto výsledky sa už
-              dokázali vyrovnať prácam ostatných autorov. Tým pádom môžeme tento
-              model, z hľadiska numerickej úspešnosti, považovať za dostatočný a
-              výkonný. Výstup modelu si tiež vizualizujeme pomocou vytvoreného
-              vizualizéra, tento krát však už iba pre obraz čistej makuly bez
-              očného nervu, pretože ten už upravený dataset neobsahuje.
-            </p>
-            <Container className="pt-3 col-xs-8 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-7">
-              <figure>
-                <img
-                  className="img-fluid"
-                  src="./images/best.png"
-                  alt="Makula - najlepší model"
-                  style={{
-                    borderRadius: "10px",
-                    boxShadow: "10px 10px 8px rgba(0, 0, 0, 0.3)",
-                  }}
-                />
-              </figure>
-              <figcaption
-                style={{
-                  fontSize: "15px",
-                  fontWeight: "bold",
-                  /*margin: "30px 0 30px 40px",*/
-                  lineHeight: "25px",
-                  color: "#919191",
-                }}
-              >
-                Obr. 9: Vizualizácia predikcie na makule pre najlepší model.
-              </figcaption>
-            </Container>
-            <p
-              className="pt-5"
-              style={{
-                fontSize: "15px",
-                /*margin: "30px 0 30px 40px",*/
-                lineHeight: "25px",
-                color: "#919191",
-              }}
-            >
-              Z vizualizácii je vidieť, že predpovedané vrstvy sú celkom podobné
-              pravdivým vrstvám. Aj vizuálna kontrola výsledku teda potvrdzuje
-              numerické výsledky tohto modelu. Nižšie poskytujeme prehľad
+              modelom nie je postačujúca. Nižšie poskytujeme prehľad
               výsledného porovnania úspešnosti výsledkov nášho najlepšieho
               modelu s modelmi prác ostatných autorov.
             </p>
@@ -964,7 +965,7 @@ export function About() {
               }}
             >
               <h4 style={{ fontWeight: "bolder" }}>
-                Porovnanie úspešnosti modelov
+                Porovnanie úspešnosti modelov s modelmi iných autorov
               </h4>
               <MyTable />
             </div>

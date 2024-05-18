@@ -16,7 +16,12 @@ export function Home() {
           width: "100%",
           height: "100vh",
           margin: 0,
-          background: "#dcdde9",
+          /*background: "#dcdde9",*/
+          backgroundImage: "url('../../public/images/firefly.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
           color: "black",
           display: "flex",
           flexDirection: "column",
@@ -31,7 +36,7 @@ export function Home() {
             borderBottom: "1px rgb(66 64 74) solid",
           }}
         >
-          WELCOME
+          VITAJTE
         </h1>
         <List
           className="mx-auto mt-5"
@@ -56,7 +61,7 @@ export function Home() {
                 <ListItemButton href="about">
                   <ListItemText
                     className="text-center"
-                    primary="Read about project"
+                    primary="Prečítajte si o projekte"
                   />
                 </ListItemButton>
               </ListItem>
@@ -74,7 +79,7 @@ export function Home() {
                 <ListItemButton href="team">
                   <ListItemText
                     className="text-center"
-                    primary="Read about team members"
+                    primary="Prečítajte si o členoch tímu"
                   />
                 </ListItemButton>
               </ListItem>
@@ -92,7 +97,7 @@ export function Home() {
                 <ListItemButton href="minute-book">
                   <ListItemText
                     className="text-center"
-                    primary="Our minute book"
+                    primary="Naša zápisnica"
                   />
                 </ListItemButton>
               </ListItem>

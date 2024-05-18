@@ -11,20 +11,26 @@ export function Navbar() {
     <>
       <NavbarBs sticky="top" className="bg-white shadow-sm">
         <Container>
-          <Nav className="me-auto">
+          <Nav className="me-auto h-100" style={{alignItems: "center"}}>
             <Nav.Link to="/" as={NavLink}>
-              Home
+            <img
+              alt=""
+              src="./images/house.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
             </Nav.Link>
-            <NavDropdown title="About" id="basic-nav-dropdown">
+            <NavDropdown title="Prehľad" id="basic-nav-dropdown">
               <NavDropdown.Item to="/about" as={NavLink}>
-                Project
+                Projekt
               </NavDropdown.Item>
               <NavDropdown.Item to="/team" as={NavLink}>
-                Our Team
+                Náš tím
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link to="/minute-book" as={NavLink}>
-              Minute Book
+              Zápisnica
             </Nav.Link>
           </Nav>
           <NavbarBs.Brand href="#">
@@ -35,7 +41,7 @@ export function Navbar() {
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            Project OCT
+            Projekt OCT
           </NavbarBs.Brand>
         </Container>
       </NavbarBs>

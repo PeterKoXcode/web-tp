@@ -13,7 +13,7 @@ export default function InputFileUpload() {
       tabIndex={-1}
       startIcon={<CloudDownloadIcon />}
     >
-      User Manual
+      Používateľská príručka
     </Button>
   );
 }

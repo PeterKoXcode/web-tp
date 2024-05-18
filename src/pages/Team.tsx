@@ -23,7 +23,7 @@ export function Team({}: Props) {
             padding: "20px",
             borderTop: "1px rgb(113 116 131) solid",
             borderBottom: "1px rgb(113 116 131) solid",
-          }}>Team members</h1>
+          }}>Členovia tímu</h1>
           <Container>
           <Row xs={1} md={2} lg={3} className="g-4">
             {teamMembers.map((member) => (

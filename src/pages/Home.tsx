@@ -7,12 +7,13 @@ import ListItemButton from "@mui/material/ListItemButton";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import fireflyImage from '../../public/images/firefly.png';
+//import logoImage from '../../public/images/STU-FEI-ancv.png';
 
 export function Home() {
   return (
     <>
       <div
-        className=" text-center py-5 pt-8"
+        className=" text-center pt-5"
         style={{
           width: "100%",
           height: "100vh",
@@ -37,7 +38,8 @@ export function Home() {
             borderBottom: "1px rgb(66 64 74) solid",
           }}
         >
-          VITAJTE
+          Segmentácia vrstiev sietnice oka z obrazov získaných optickou
+          koherentnou tomografiou (OCT)
         </h1>
         <List
           className="mx-auto mt-5"
@@ -108,6 +110,19 @@ export function Home() {
         <div className="mt-5">
           <DownloadButton />
         </div>
+        {/*
+        <img
+          src={logoImage}
+          alt="Logo"
+          style={{
+            position: 'absolute',
+            bottom: '10px',
+            left: '10px',
+            width: '150px', 
+            height: 'auto',
+          }}
+        />
+        */}
       </div>
     </>
   );

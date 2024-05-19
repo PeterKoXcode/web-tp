@@ -6,6 +6,7 @@ import DownloadButton from "../components/DownloadButton";
 import ListItemButton from "@mui/material/ListItemButton";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import fireflyImage from '../../public/images/firefly.png';
 
 export function Home() {
   return (
@@ -17,7 +18,7 @@ export function Home() {
           height: "100vh",
           margin: 0,
           /*background: "#dcdde9",*/
-          backgroundImage: `url(../../public/images/firefly.png)`,
+          backgroundImage: `url(${fireflyImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

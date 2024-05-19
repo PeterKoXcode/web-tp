@@ -17,7 +17,7 @@ export function Home() {
           height: "100vh",
           margin: 0,
           /*background: "#dcdde9",*/
-          backgroundImage: "url('../../public/images/firefly.png')",
+          backgroundImage: `url(../../public/images/firefly.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
